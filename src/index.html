@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+
+    <title>
+      Pasión por el motor - Blog de Automovilismo, Innovación y Clásicos
+    </title>
+    <meta
+      name="description"
+      content="Tu blog de referencia sobre el mundo motor. Análisis, noticias y guías sobre autos eléctricos, clásicos, tuning y deportivos."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <header class="header-principal">
+      <div class="container">
+        <a href="#" class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M8 3H16C17.1046 3 18 3.89543 18 5V14H6V5C6 3.89543 6.89543 3 8 3ZM19 16V18C19 18.5523 18.5523 19 18 19H17V21H15V19H9V21H7V19H6C5.44772 19 5 18.5523 5 18V16H19Z"
+            ></path>
+          </svg>
+          Pasión por el motor
+        </a>
+
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#articulos">Artículos</a></li>
+            <li>
+              <a href="#perfil">Sobre Mí</a>
+            </li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- sección intro -->
+      <section classin="hero" title="Auto deportivo en una pista de carreras">
+        <div class="hero-content">
+          <h1 class="title">Pasión por el motor</h1>
+          <p class="parrafo-hero">
+            Tu dósis diaria de alta velocidad, innovación eléctrica y la
+            nostalgia de los clásicos. Analizamos el asfalto, un pistón a la
+            vez.
+          </p>
+          <a href="#articulos" class="btn">Ver Novedades</a>
+        </div>
+      </section>
+      <div class="container container-principal">
+        <!-- seccion de los articulos -->
+        <section class="seccion-articulos" id="articulos">
+          <h2>Últimos Artículos</h2>
+
+          <!-- articulos -->
+          <div class="articulos-grid">
+            <article class="card-articulo">
+              <div class="card-imagen-container">
+                <span class="card-badge badge-nuevo">Nuevo</span>
+                <img
+                  src="../assets/auto-electrico-moderno.jpg"
+                  alt="Un auto eléctrico moderno cargando su batería"
+                  class="card-imagen"
+                />
+              </div>
+              <div class="card-contenido">
+                <span class="card-meta"
+                  >15 de Oct, 2025 · en <a href="#">Innovación</a></span
+                >
+                <h3>
+                  El Futuro es Eléctrico: ¿Están los V8 en Peligro de Extinción?
+                </h3>
+                <p class="card-extracto">
+                  Analizamos la imparable transición hacia la movilidad
+                  eléctrica. Las nuevas plataformas superan en aceleración a los
+                  motores de combustión, pero... ¿pueden replicar su alma?
+                </p>
+                <a href="#" class="btn-leer-mas">Leer más &rarr;</a>
+              </div>
+            </article>
+
+            <article class="card-articulo">
+              <div class="card-imagen-container">
+                <span class="card-badge" style="background-color: #f0ad4e"
+                  >Clásicos</span
+                >
+                <img
+                  src="../assets/auto-clasico-80.jpg"
+                  alt="Un auto deportivo clásico de los años 80 en perfecto estado"
+                  class="card-imagen"
+                />
+              </div>
+              <div class="card-contenido">
+                <span class="card-meta"
+                  >12 de Oct, 2025 · en <a href="#">Clásicos</a></span
+                >
+                <h3>
+                  Joyas Ocultas: 5 Autos Clásicos de los 80 que Deberías Conocer
+                </h3>
+                <p class="card-extracto">
+                  No todo es el DeLorean o el Testarossa. Descubre cinco autos
+                  de los 80 que definieron una era y que hoy son buscados por
+                  coleccionistas por su diseño único.
+                </p>
+                <a href="#" class="btn-leer-mas">Leer más &rarr;</a>
+              </div>
+            </article>
+
+            <article class="card-articulo">
+              <div class="card-imagen-container">
+                <span class="card-badge" style="background-color: #5cb85c"
+                  >Tuning</span
+                >
+                <img
+                  src="../assets/motor-modificado.jpg"
+                  alt="Motor de auto modificado con piezas de alto rendimiento"
+                  class="card-imagen"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-contenido">
+                <span class="card-meta"
+                  >10 de Oct, 2025 · en <a href="#">Tuning</a></span
+                >
+                <h3>
+                  Tuning 101: Cómo Empezar a Modificar tu Auto sin Romperlo
+                </h3>
+                <p class="card-extracto">
+                  ¿Quieres más potencia? Antes de comprar ese turbo gigante,
+                  revisa nuestra guía básica. Llantas, suspensión y frenos: el
+                  triángulo de oro del performance.
+                </p>
+                <a href="#" class="btn-leer-mas">Leer más &rarr;</a>
+              </div>
+            </article>
+
+            <article class="card-articulo">
+              <div class="card-imagen-container">
+                <span class="card-badge">Deportivos</span>
+                <img
+                  src="../assets/auto-f1.jpg"
+                  alt="Auto de Fórmula 1 tomando una curva a alta velocidad"
+                  class="card-imagen"
+                />
+              </div>
+              <div class="card-contenido">
+                <span class="card-meta"
+                  >8 de Oct, 2025 · en <a href="#">Deportivos</a></span
+                >
+                <h3>La Aerodinámica en F1: El Secreto de la Velocidad Pura</h3>
+                <p class="card-extracto">
+                  El "efecto suelo" ha vuelto. Te explicamos de forma sencilla
+                  cómo los autos de F1 se pegan al asfalto y por qué los
+                  alerones son obras de arte de la ingeniería.
+                </p>
+                <a href="#" class="btn-leer-mas">Leer más &rarr;</a>
+              </div>
+            </article>
+
+            <article class="card-articulo">
+              <div class="card-imagen-container">
+                <span class="card-badge">Innovación</span>
+                <img
+                  src="../assets/hypercar-hibrido.webp"
+                  alt="Un hypercar híbrido con diseño futurista"
+                  class="card-imagen"
+                />
+              </div>
+              <div class="card-contenido">
+                <span class="card-meta"
+                  >5 de Oct, 2025 · en <a href="#">Innovación</a></span
+                >
+                <h3>
+                  Análisis: El Nuevo Hypercar Híbrido que Desafía la Física
+                </h3>
+                <p class="card-extracto">
+                  Combina un motor V12 atmosférico con tres motores eléctricos.
+                  Más de 1000 CV, fibra de carbono activa y un precio que quita
+                  el aliento. Lo analizamos a fondo.
+                </p>
+                <a href="#" class="btn-leer-mas">Leer más &rarr;</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- seccion del costado -->
+        <aside class="sidebar" id="perfil">
+          <div class="widget perfil-autor">
+            <h3 class="widget-titulo">Sobre el Autor</h3>
+            <img
+              src="../assets/imagen-uri.jpeg"
+              alt="Foto de perfil de Alex Rivas, autor del blog"
+              class="perfil-foto"
+            />
+            <h4>Uriel Garmendia</h4>
+            <p>Apasionado del mundo motor y estudiante de sistemas en UADE</p>
+            <a
+              href="https://identikit-urielgarmendia.netlify.app/"
+              class="btn-leer-mas"
+              target="_blank"
+              >Más sobre mi &rarr;</a
+            >
+          </div>
+
+          <div class="widget widget-categorias">
+            <h3 class="widget-titulo">Categorías</h3>
+            <ul>
+              <li>
+                <a href="#">Innovación <span>(5)</span></a>
+              </li>
+              <li>
+                <a href="#">Clásicos <span>(3)</span></a>
+              </li>
+              <li>
+                <a href="#">Deportivos <span>(8)</span></a>
+              </li>
+              <li>
+                <a href="#">Tuning <span>(4)</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="widget widget-suscripcion">
+            <h3 class="widget-titulo">Suscribirse</h3>
+            <p>
+              Recibe las últimas noticias del mundo motor directamente en tu
+              email.
+            </p>
+            <form class="form-suscripcion">
+              <input type="email" placeholder="tu.email@ejemplo.com" required />
+              <button typea="submit" class="btn btn-block">Suscribirse</button>
+            </form>
+          </div>
+
+          <div class="widget">
+            <h3 class="widget-titulo">Seguime</h3>
+            <div class="widget-redes">
+              <a href="#" class="icono-social" aria-label="Seguir en Twitter">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="icono-social" aria-label="Seguir en Instagram">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163m0-2.163C8.74 0 8.333.011 7.053.069 2.59.215.215 2.59.069 7.053.011 8.333 0 8.74 0 12s.011 3.667.069 4.947c.148 4.46 2.373 6.685 6.984 6.984 1.267.058 1.668.069 4.947.069s3.68-.011 4.947-.069c4.611-.299 6.836-2.524 6.984-6.984.058-1.267.069-1.668.069-4.947s-.011-3.667-.069-4.947C21.785 2.59 19.56.215 14.947.069 13.667.011 13.26 0 12 0m0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162m0 10.333c-2.3 0-4.171-1.871-4.171-4.171s1.871-4.171 4.171-4.171 4.171 1.871 4.171 4.171-1.871 4.171-4.171 4.171m4.868-10.42a1.44 1.44 0 1 0 0-2.88 1.44 1.44 0 0 0 0 2.88"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="icono-social" aria-label="Seguir en LinkedIn">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5M8 19H5V8h3v11M6.5 6.5A1.5 1.5 0 1 1 8 5a1.5 1.5 0 0 1-1.5 1.5M19 19h-3v-5.5c0-1.3-.02-3-1.82-3-1.83 0-2.12 1.42-2.12 2.9v5.6H9V8h2.87v1.31h.04c.4-.76 1.37-1.55 2.83-1.55 3.03 0 3.59 1.99 3.59 4.58V19z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-principal" id="contacto">
+      <div class="container">
+        <a href="#" class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M8 3H16C17.1046 3 18 3.89543 18 5V14H6V5C6 3.89543 6.89543 3 8 3ZM19 16V18C19 18.5523 18.5523 19 18 19H17V21H15V19H9V21H7V19H6C5.44772 19 5 18.5523 5 18V16H19Z"
+            ></path>
+          </svg>
+          Pasión por el motor
+        </a>
+        <ul class="footer-enlaces">
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Términos de Uso</a></li>
+          <li><a href="#">Contacto: info@motorpasion.blog</a></li>
+        </ul>
+        <p class="footer-copyright">
+          &copy; 2025 Pasión por el motor. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
