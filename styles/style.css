@@ -1,10 +1,4 @@
-/* * CSS Completo del Blog "Motor Pasión"
-         * Siguiendo FASE 1 (Diseño Visual) y FASE 3 (Estilos)
-        */
-
-/* --- 1. Configuración Base (Reset y Variables) --- */
 :root {
-  /* Paleta de colores (FASE 1) */
   --color-fondo: #121212;
   --color-primario: #1a1a1a;
   --color-secundario: #2a2a2a;
@@ -12,7 +6,6 @@
   --color-texto-principal: #f0f0f0;
   --color-texto-secundario: #a0a0a0;
 
-  /* Tipografía (FASE 1) */
   --fuente-titulos: "Roboto Condensed", sans-serif;
   --fuente-texto: "Inter", sans-serif;
 }
@@ -24,7 +17,7 @@
 }
 
 html {
-  font-size: 100%; /* 16px */
+  font-size: 100%;
   scroll-behavior: smooth;
 }
 
@@ -75,12 +68,11 @@ h3 {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* --- 2. Header y Navegación (FASE 2 y 3) --- */
 .header-principal {
   background-color: var(--color-primario);
   border-bottom: 2px solid var(--color-secundario);
@@ -112,13 +104,12 @@ h3 {
   fill: var(--color-acento-racing);
 }
 
-/* Menú Hamburguesa (FASE 3 - Responsive) */
 #menu-toggle {
-  display: none; /* Oculta el checkbox */
+  display: none;
 }
 
 .menu-icon {
-  display: none; /* Oculto en desktop */
+  display: none;
   width: 30px;
   height: 25px;
   position: relative;
@@ -518,10 +509,6 @@ h3 {
   color: var(--color-texto-secundario);
 }
 
-/* --- 11. PÁGINA DE ARTÍCULO INDIVIDUAL --- */
-/* (Esta sección aplica al .container, no al .container-principal, por eso mantiene el estilo) */
-/* (Se modifica el .articulo-contenido para que coincida con el nuevo estilo V1) */
-
 .breadcrumb {
   padding: 1.5rem 0;
   font-size: 0.85rem;
@@ -540,21 +527,20 @@ h3 {
 
 .btn-volver {
   display: inline-block;
-  color: var(--color-primario);
+  color: var(--color-texto-secundario);
   font-family: var(--font-titulos);
   margin-bottom: 1.5rem;
 }
 .btn-volver:hover {
-  color: var(--color-secundario);
+  color: var(--color-texto-principal);
 }
 
-/* === CAMBIO: La página de artículo ahora es la "caja" === */
 .articulo-contenido {
-  background-color: var(--color-superficie);
-  border-radius: var(--radio-borde);
+  background-color: var(--color-primario);
+  border-radius: 8px;
   padding: 2rem;
-  border: 1px solid var(--color-borde);
-  margin-bottom: 2.5rem; /* Separación del footer */
+  border: 1px solid var(--color-secundario);
+  margin-bottom: 2.5rem;
 }
 
 .articulo-contenido .articulo-meta {
@@ -638,9 +624,18 @@ h3 {
     justify-content: space-between;
   }
 
-  .card-articulo {
+  .card-articulo:first-child {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .card-articulo:not(:first-child) {
     flex-basis: calc(50% - 0.75rem);
     width: calc(50% - 0.75rem);
+  }
+
+  .card-articulo:first-child {
+    flex-direction: column;
   }
 }
 
@@ -651,7 +646,7 @@ h3 {
   }
 
   .seccion-articulos {
-    flex: 3; /* 75% */
+    flex: 3;
   }
 
   .sidebar {
@@ -661,7 +656,39 @@ h3 {
     align-self: flex-start;
   }
 
-  .card-articulo {
+  .articulos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .card-articulo:first-child {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 280px;
+  }
+
+  .card-articulo:first-child .card-imagen-container {
+    flex: 1;
+    min-height: 280px;
+  }
+
+  .card-articulo:first-child .card-contenido {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-articulo:first-child .card-imagen {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-articulo:not(:first-child) {
     flex-basis: calc(50% - 0.75rem);
     width: calc(50% - 0.75rem);
   }
