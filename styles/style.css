@@ -200,7 +200,7 @@ h3 {
   z-index: 2;
   padding: 1rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/lexus.jpg");
+    url("../assets/fondo.gif");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -217,7 +217,7 @@ h3 {
 .parrafo-hero {
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  max-width: 600px;
+  max-width: 625px;
 }
 
 .btn {
@@ -542,11 +542,21 @@ h3 {
   border-radius: 8px;
   padding: 2rem;
   border: 1px solid var(--color-secundario);
-  margin-bottom: 2.5rem;
+  margin: 2.5rem;
 }
 
 .articulo-contenido .articulo-meta {
   font-size: 0.9rem;
+}
+
+.articulo-meta {
+  color: var(--color-acento-racing);
+  font-weight: bold;
+}
+
+.tiempo-lectura {
+  font-weight: lighter;
+  color: var(--color-texto-secundario);
 }
 
 .articulo-contenido h1 {
@@ -674,7 +684,7 @@ h3 {
 
   .card-articulo:first-child .card-imagen-container {
     flex: 1;
-    min-height: 280px;
+    min-height: 100%;
   }
 
   .card-articulo:first-child .card-contenido {
