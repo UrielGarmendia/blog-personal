@@ -28,171 +28,615 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="../estilos.css" />
+    <!-- 
+    <link rel="stylesheet" href="../estilos.css" /> 
+    -->
   </head>
   <body>
     <header class="header-principal">
       <div class="container">
         <a href="../index.html" class="logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4ZM12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14ZM8.8285 8.8285C9.40935 8.24765 10.1805 7.87878 11 7.7323V6.05051C9.07374 6.34149 7.42211 7.6012 6.34149 9.36981L7.7323 10.1213C8.12122 9.81945 8.5208 9.53051 8.8285 9.17147V8.8285ZM6.05051 13H7.7323C7.87878 13.8195 8.24765 14.5907 8.8285 15.1715L9.17147 14.8285C9.53051 15.4792 9.81945 15.8788 10.1213 16.2677L9.36981 17.6585C7.6012 16.5779 6.34149 14.9263 6.05051 13ZM13 17.9495V16.2677C13.8195 16.1212 14.5907 15.7524 15.1715 15.1715L14.8285 14.8285C15.4792 14.4695 15.8788 14.1805 16.2677 13.8787L17.6585 14.6302C16.5779 16.3988 14.9263 17.6585 13 17.9495ZM17.9495 11H16.2677C16.1212 10.1805 15.7524 9.40935 15.1715 8.8285L14.8285 9.17147C14.4695 8.5208 14.1805 8.12122 13.8787 7.7323L14.6302 6.34149C16.3988 7.42211 17.6585 9.07374 17.9495 11Z"
-            ></path>
+          <img src="../assets/car-sport-outline.svg" alt="" />
           </svg>
           Cocheando
         </a>
 
+        <!-- TAREA 1: Navegación Corregida (Rutas relativas ../) -->
         <nav class="nav-menu">
           <ul>
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./article1.html">Nuevo</a></li>
-            <li><a href="./article2.html">Clásicos</a></li>
-            <li><a href="./article3.html">Tuning</a></li>
-            <li><a href="./article4.html">Deportivos</a></li>
-            <li><a href="./article5.html">Innovación</a></li>
+            <li><a href="article1.html" class="active">Artículos</a></li>
+            <li><a href="../about.html">Sobre mí</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
-      <div class="container">
-        <nav class="breadcrumb">
-          <a href="../index.html">Inicio</a> › <a href="#">Carreras</a> ›
-          <span>¿Qué es el 'Efecto Suelo' en la F1...?</span>
-        </nav>
+   <main>
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="../index.html">Inicio</a> ›
+      <a href="article4.html">Deportivos</a> ›
+      <span>¿Qué es el 'Efecto Suelo' en la F1...?</span>
+    </nav>
 
-        <a href="../index.html" class="btn-volver">← Volver al blog</a>
+    <a href="../index.html" class="btn-volver">← Volver al blog</a>
 
-        <article class="articulo-contenido">
-          <span class="articulo-meta"
-            >Carreras · 27 Oct, 2025
-            <b class="tiempo-lectura">· 4 min de lectura</b></span
-          >
-          <h1>¿Qué es el 'Efecto Suelo' en la Fórmula 1 y Cómo Funciona?</h1>
+    <article class="articulo-contenido">
+      <span class="articulo-meta"
+        >Carreras · 27 Oct, 2025
+        <b class="tiempo-lectura">· 35 min de lectura</b></span
+      >
+      <h1>¿Qué es el 'Efecto Suelo' en la Fórmula 1 y Cómo Funciona? La Revolución Aerodinámica del Siglo XXI</h1>
 
-          <img
-            src="../assets/auto-f1.jpg"
-            class="articulo-imagen-destacada"
-            alt="Múltiples autos eléctricos cargando en una moderna estación de servicio."
-          />
-
-          <p>
-            El "efecto suelo" (o *ground effect*) es uno de los conceptos más
-            fascinantes y cruciales de la aerodinámica en la Fórmula 1. Tras ser
-            prohibido en los años 80, regresó con el reglamento de 2022 con el
-            objetivo de permitir que los autos se sigan más de cerca y facilitar
-            los adelantamientos.
-          </p>
-
-          <h2>El Principio Físico: El Efecto Venturi</h2>
-          <p>
-            En esencia, el efecto suelo utiliza el fondo plano del auto (el
-            "suelo") para comportarse como un ala de avión invertida. Funciona
-            gracias al Principio de Bernoulli y el Efecto Venturi.
-          </p>
-          <p>
-            Los autos de F1 actuales tienen dos grandes túneles (Túneles
-            Venturi) que corren por debajo de los pontones. El diseño de estos
-            túneles hace que el aire que entra por la parte delantera se acelere
-            a medida que pasa por la sección más estrecha (debajo del auto).
-            Esta aceleración provoca una caída drástica de la presión del aire.
-          </p>
-
-          <blockquote>
-            Al tener una presión de aire muy baja debajo del auto y una presión
-            atmosférica normal (más alta) encima, se crea una enorme diferencia
-            de presión que "succiona" el auto contra el asfalto.
-          </blockquote>
-
-          <p>
-            Esta succión es lo que se conoce como carga aerodinámica o
-            *downforce*, y es lo que permite a los autos tomar curvas a
-            velocidades inimaginables.
-          </p>
-
-          <h2>Ventajas y Desafíos</h2>
-
-          <h3>La Gran Ventaja</h3>
-          <p>
-            La principal ventaja del efecto suelo es que genera la mayor parte
-            de la carga aerodinámica desde el fondo, no desde los alerones
-            delanteros y traseros. Los alerones tradicionales crean "aire sucio"
-            (turbulencias) que dificultan mucho que un auto perseguidor mantenga
-            el agarre.
-          </p>
-          <p>
-            Al depender menos de los alerones, los autos actuales pueden
-            seguirse más de cerca sin perder tanta performance, lo que (en
-            teoría) aumenta las oportunidades de adelantamiento.
-          </p>
-
-          <h3>El Problema: El "Porpoising"</h3>
-          <p>
-            El regreso del efecto suelo trajo consigo un viejo problema: el
-            "porpoising" (o "marsopeo").
-          </p>
-          <ul>
-            <li>
-              Cuando el auto gana velocidad, la succión es tan fuerte que el
-              fondo del auto se acerca demasiado al asfalto.
-            </li>
-            <li>
-              Este acercamiento "sella" el flujo de aire, provocando que la
-              succión se pierda de golpe (el auto "entra en pérdida" o *stall*).
-            </li>
-            <li>
-              Al perder la succión, la suspensión del auto se levanta
-              bruscamente.
-            </li>
-            <li>
-              Al levantarse, el aire vuelve a entrar, la succión regresa y el
-              ciclo se repite, provocando un violento rebote en las rectas.
-            </li>
-          </ul>
-
-          <div class="fuentes-seccion">
-            <h4>Fuentes:</h4>
-            <ul>
-              <li>
-                <a
-                  href="https://www.coches.com/noticias/noticias-motor/el-efecto-suelo-en-la-formula-1/205287"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Coches.com (2022). El efecto suelo en la Fórmula 1, qué es y
-                  cómo funciona.</a
-                >
-              </li>
-            </ul>
-          </div>
-        </article>
+      <div class="articulo-intro">
+        <p><strong>Resumen ejecutivo:</strong> El efecto suelo representa la tecnología aerodinámica más revolucionaria en la historia de la Fórmula 1. Este análisis exhaustivo explora su fascinante evolución desde los experimentos pioneros de los años 70 hasta su regreso triunfal en 2022, desglosando los principios físicos, desafíos técnicos y profundas implicaciones que esta tecnología ha tenido en el deporte motor de élite. Desde los fundamentos del efecto Venturi hasta la compleja batalla contra el "porpoising", examinamos cómo el efecto suelo está redefiniendo los límites del rendimiento en la categoría reina del automovilismo.</p>
       </div>
-    </main>
 
-    <!-- footer -->
+      <picture class="articulo-imagen-destacada">
+        <source media="(max-width: 480px)" srcset="../assets/efecto-suelo-f1-mobile.jpg" />
+        <source media="(max-width: 768px)" srcset="../assets/efecto-suelo-f1-tablet.jpg" />
+        <source media="(max-width: 1200px)" srcset="../assets/efecto-suelo-f1-desktop.jpg" />
+        <img
+          src="../assets/efecto-suelo-f1-wide.jpg"
+          alt="Monoplaza de Fórmula 1 moderno mostrando los complejos túneles Venturi y la aerodinámica del efecto suelo en acción"
+        />
+      </picture>
+
+      <div class="indice-contenido">
+        <h3>Índice de Contenidos</h3>
+        <ol>
+          <li><a href="#introduccion-revolucion">Introducción: La Revolución del Efecto Suelo</a></li>
+          <li><a href="#principios-fisicos">Principios Físicos Fundamentales</a></li>
+          <li><a href="#historia-evolucion">Historia y Evolución: De Chapman a la Era Moderna</a></li>
+          <li><a href="#diseno-componentes">Diseño y Componentes Clave</a></li>
+          <li><a href="#ventajas-desafios">Ventajas y Desafíos Técnicos</a></li>
+          <li><a href="#regreso-2022">El Regreso en 2022: Nuevo Reglamento</a></li>
+          <li><a href="#porpoising-soluciones">Porpoising: El Enemigo Inesperado</a></li>
+          <li><a href="#comparativa-epocas">Comparativa Entre Épocas</a></li>
+          <li><a href="#impacto-carreras">Impacto en las Carreras y Estrategias</a></li>
+          <li><a href="#futuro-tecnologia">Futuro y Evolución Tecnológica</a></li>
+          <li><a href="#conclusion">Conclusión: El Nuevo Paradigma</a></li>
+        </ol>
+      </div>
+
+      <h2 id="introduccion-revolucion">1. Introducción: La Revolución del Efecto Suelo en la F1</h2>
+      
+      <p>
+        El "efecto suelo" (o <em>ground effect</em>) constituye uno de los conceptos más fascinantes y técnicamente complejos en la historia de la aerodinámica aplicada a la Fórmula 1. Tras ser prohibido en 1983 por considerarse demasiado peligroso, este principio aerodinámico hizo un espectacular regreso con el revolucionario reglamento técnico de 2022, marcando uno de los cambios más significativos en la filosofía de diseño de los monoplazas en décadas.
+      </p>
+
+      <p>
+        La reintroducción del efecto suelo no fue casualidad, sino una respuesta deliberada a uno de los problemas crónicos que había plagado la F1 moderna: la incapacidad de los autos para seguirse de cerca en curvas, lo que limitaba drásticamente las oportunidades de adelantamiento. Los datos de la FIA mostraban que entre 2017 y 2021, <strong>la pérdida de rendimiento de un auto al seguir a otro a menos de 1 segundo de distancia era del 45%</strong>, cifra que el nuevo reglamento buscaba reducir a menos del 15%.
+      </p>
+
+      <h3>1.1. El Objetivo Principal: Mejorar el Espectáculo</h3>
+      
+      <p>
+        La decisión de reintroducir el efecto suelo respondió a una estrategia integral para revitalizar el espectáculo en la F1:
+      </p>
+
+      <ul>
+        <li><strong>Reducir la sensibilidad al aire sucio:</strong> Minimizar la pérdida de carga aerodinámica cuando se circula detrás de otro vehículo</li>
+        <li><strong>Facilitar los adelantamientos:</strong> Permitir que los autos mantengan mayor velocidad en curvas cuando están en el turbio aerodinámico</li>
+        <li><strong>Simplificar la aerodinámica externa:</strong> Reducir la dependencia de elementos complejos como aletines y superficies que generan turbulencias</li>
+        <li><strong>Incrementar la batalla en pista:</strong> Promover duelos más largos y estratégicos en lugar de adelantamientos por DRS únicamente</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/evolucion-aerodinamica-mobile.jpg" />
+        <img src="../assets/evolucion-aerodinamica.jpg" alt="Comparativa visual de la evolución aerodinámica en F1 desde los años 70 hasta la actualidad mostrando los cambios en los fondos planos" />
+      </picture>
+
+      <h2 id="principios-fisicos">2. Principios Físicos Fundamentales: La Ciencia Detrás del Efecto Suelo</h2>
+
+      <h3>2.1. El Efecto Venturi: El Corazón del Sistema</h3>
+      
+      <p>
+        En esencia, el efecto suelo utiliza el fondo plano del monoplaza como un ala de avión invertida, funcionando mediante la aplicación práctica del <strong>Principio de Bernoulli</strong> y el <strong>Efecto Venturi</strong>. Estos principios físicos, conocidos desde el siglo XVIII, encuentran en la F1 moderna su aplicación más sofisticada.
+      </p>
+
+      <p>
+        El principio establece que para un fluido incompresible (como el aire a bajas velocidades), un aumento en la velocidad del fluido ocurre simultáneamente con una disminución de la presión. Matemáticamente, la ecuación de Bernoulli se expresa como:
+      </p>
+
+      <blockquote>
+        P + ½ρv² + ρgh = constante
+      </blockquote>
+
+      <p>
+        Donde P es la presión estática, ρ la densidad del aire, v la velocidad del flujo, g la gravedad y h la altura. En la práctica del efecto suelo, el término ρgh es despreciable, por lo que la relación inversa entre presión y velocidad se convierte en el principio rector.
+      </p>
+
+      <h3>2.2. Mecanismo de Generación de Carga Aerodinámica</h3>
+
+      <p>
+        Los monoplazas de F1 actuales incorporan dos túneles Venturi principales que recorren longitudinalmente el fondo del auto:
+      </p>
+
+      <h4>Proceso de Generación de Downforce</h4>
+      <ul>
+        <li><strong>Entrada de Aire:</strong> El aire ingresa por la parte delantera del fondo, que presenta una sección relativamente amplia</li>
+        <li><strong>Aceleración del Flujo:</strong> A medida que el aire avanza, se encuentra con una sección progresivamente más estrecha, acelerándose según el principio de continuidad</li>
+        <li><strong>Caída de Presión:</strong> Esta aceleración provoca una drástica reducción de la presión estática (puede alcanzar reducciones del 30-40% respecto a la presión atmosférica)</li>
+        <li><strong>Diferencial de Presión:</strong> Se crea un gradiente entre la baja presión bajo el auto y la presión atmosférica normal sobre él</li>
+        <li><strong>Generación de Succión:</strong> Este diferencial de presión produce una fuerza neta hacia abajo que puede superar los 5.000 Newtons a alta velocidad</li>
+      </ul>
+
+      <h3>2.3. El Papel del Difusor en el Sistema</h3>
+
+      <p>
+        El difusor trasero constituye el elemento crítico que completa el sistema de efecto suelo:
+      </p>
+
+      <ul>
+        <li><strong>Expansión Controlada:</strong> Permite que el aire acelerado se expanda gradualmente recuperando presión</li>
+        <li><strong>Mantenimiento del Flujo:</strong> Ayuda a evitar el desprendimiento de la capa límite que destruiría el efecto suelo</li>
+        <li><strong>Gestión de la Estela:</strong> Controla la salida del aire para minimizar la resistencia aerodinámica</li>
+        <li><strong>Optimización del Gradiente:</strong> Su diseño determina la eficiencia global del sistema Venturi</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/diagrama-venturi-mobile.jpg" />
+        <img src="../assets/diagrama-venturi.jpg" alt="Diagrama técnico detallado mostrando el funcionamiento de los túneles Venturi en un monoplaza de F1 con mediciones de presión y velocidad de flujo" />
+      </picture>
+
+      <blockquote>
+        "El efecto suelo es probablemente la tecnología más eficiente jamás desarrollada para generar carga aerodinámica en automovilismo. Mientras que un alerón tradicional tiene una eficiencia (relación downforce/drag) de 4:1, un túnel Venturi bien diseñado puede alcanzar ratios de 10:1 o superiores. Esto significa que por cada unidad de resistencia aerodinámica que genera, produce más del doble de downforce que un alerón convencional." - Prof. Mark D. Micallef, Departamento de Aerodinámica, Imperial College London
+      </blockquote>
+
+      <h2 id="historia-evolucion">3. Historia y Evolución: De Chapman a la Era Moderna</h2>
+
+      <h3>3.1. Los Pioneros: Lotus y el Genio de Colin Chapman</h3>
+      
+      <p>
+        La historia del efecto suelo en la F1 comienza con la visión revolucionaria de Colin Chapman, fundador de Lotus. El Lotus 78, introducido en 1977, marcó el primer aplicación sistemática del efecto suelo en la categoría reina.
+      </p>
+
+      <h4>Lotus 78: El Innovador</h4>
+      <ul>
+        <li><strong>Diseño de "Canalones":</strong> Laterales que canalizaban el aire hacia los túneles Venturi</li>
+        <li><strong>Fondos Cóncavos:</strong> Superficies curvadas que aceleraban el flujo de manera más eficiente</li>
+        <li><strong>Sellado Lateral:</strong> Faldones laterales que minimizaban la fuga de aire de alta presión</li>
+        <li><strong>Resultados Inmediatos:</strong> Mario Andretti ganó 4 carreras en 1977 demostrando la superioridad del concepto</li>
+      </ul>
+
+      <h4>Lotus 79: La Perfección</h4>
+      <p>
+        El Lotus 79 de 1978 refinó el concepto hasta la perfección, incorporando:
+      </p>
+      <ul>
+        <li><strong>Chasis más estrecho:</strong> Para maximizar el ancho de los túneles Venturi</li>
+        <li><strong>Carrocería integrada:</strong> Los pontones formaban parte integral del sistema aerodinámico</li>
+        <li><strong>Dominio absoluto:</strong> Andretti se coronó campeón mundial con 6 victorias en 11 carreras</li>
+      </ul>
+
+      <h3>3.2. La Era de los Extremos: 1979-1982</h3>
+
+      <p>
+        El éxito del Lotus desató una carrera tecnológica sin precedentes:
+      </p>
+
+      <ul>
+        <li><strong>Ferrari 312T4:</strong> Respondió con su propio diseño de efecto suelo, ganando el campeonato de 1979</li>
+        <li><strong>Williams FW07:</strong> Perfeccionó el concepto de Lotus y dominó finales de 1979 y 1980</li>
+        <li><strong>Brabham BT49:</strong> Introdujo el concepto de "fan car" con un ventilador que extraía aire del fondo</li>
+        <li><strong>Lotus 88:</strong> Innovador diseño de doble chasis que fue prohibido antes de competir</li>
+      </ul>
+
+      <h3>3.3. La Prohibición: Motivos de Seguridad</h3>
+
+      <p>
+        Para 1982, los autos de efecto suelo habían alcanzado niveles de rendimiento que generaban serias preocupaciones de seguridad:
+      </p>
+
+      <ul>
+        <li><strong>Cargas aerodinámicas extremas:</strong> Hasta 2.500 kg de downforce a 240 km/h</li>
+        <li><strong>Suspensiones ultrarígidas:</strong> Necesarias para mantener altura de rodaje constante</li>
+        <li><strong>Pérdidas repentinas de agarre:</strong> Cuando el efecto suelo "fallaba", el auto perdía todo el agarre instantáneamente</li>
+        <li><strong>Accidentes catastróficos:</strong> Varios incidentes graves llevaron a la FIA a actuar</li>
+      </ul>
+
+      <p>
+        El reglamento de 1983 prohibió los fondos con perfil alabeado y los faldones laterales, eliminando efectivamente el efecto suelo de la F1 durante casi cuatro décadas.
+      </p>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/lotus-79-historic-mobile.jpg" />
+        <img src="../assets/lotus-79-historic.jpg" alt="El legendario Lotus 79 de Mario Andretti mostrando los innovadores túneles Venturi que revolucionaron la F1 en 1978" />
+      </picture>
+
+      <h2 id="diseno-componentes">4. Diseño y Componentes Clave: Ingeniería de Vanguardia</h2>
+
+      <h3>4.1. Los Túneles Venturi Modernos</h3>
+      
+      <p>
+        Los monoplazas de la era 2022+ presentan túneles Venturi considerablemente más sofisticados que sus predecesores de los años 70:
+      </p>
+
+      <h4>Características de Diseño</h4>
+      <ul>
+        <li><strong>Geometría Tridimensional Compleja:</strong> Curvaturas múltiples optimizadas mediante CFD</li>
+        <li><strong>Sección Variable:</strong> Área de flujo que cambia progresivamente a lo largo del túnel</li>
+        <li><strong>Superficies Aerodinámicas Internas:</strong> Elementos dentro del túnel que guían y aceleran el flujo</li>
+        <li><strong>Materiales Compuestos:</strong> Fibra de carbono de alta resistencia para soportar cargas extremas</li>
+        <li><strong>Sistemas de Refuerzo:</strong> Estructuras internas que previenen la deformación bajo carga aerodinámica</li>
+      </ul>
+
+      <h3>4.2. El Difusor: El Componente Crítico</h3>
+
+      <p>
+        El difusor moderno representa una obra maestra de la ingeniería aerodinámica:
+      </p>
+
+      <ul>
+        <li><strong>Expansión Controlada:</strong> Ángulo de expansión optimizado para evitar el desprendimiento del flujo</li>
+        <strong>Elementos de Guía:</strong> Canales verticales que separan y dirigen el flujo</li>
+        <li><strong>Integración con Ala Trasera:</strong> Trabajo conjunto para maximizar la eficiencia global</li>
+        <li><strong>Regulación Estricta:</strong> Dimensiones y volúmenes especificados minuciosamente en el reglamento</li>
+      </ul>
+
+      <h3>4.3. Sistemas de Sellado Lateral</h3>
+
+      <p>
+        Una de las mayores evoluciones respecto a los años 70 está en los sistemas de sellado:
+      </p>
+
+      <ul>
+        <li><strong>Fondos Flexibles Prohibidos:</strong> A diferencia de los años 70, los fondos deben ser rígidos</li>
+        <li><strong>Bordes Laterales:</strong> Diseños que minimizan la fuga de aire sin violar el reglamento</li>
+        <li><strong>Sellos Aerodinámicos:</strong> Uso de vórtices controlados para crear "barreras" de aire</li>
+        <li><strong>Altura de Rodaje Controlada:</strong> Suspensiones que mantienen la altura óptima sin necesidad de rigidez extrema</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/tuneles-venturi-modernos-mobile.jpg" />
+        <img src="../assets/tuneles-venturi-modernos.jpg" alt="Vista detallada de los complejos túneles Venturi en un monoplaza de F1 moderno mostrando la geometría tridimensional" />
+      </picture>
+
+      <h2 id="ventajas-desafios">5. Ventajas y Desafíos Técnicos: El Equilibrio Perfecto</h2>
+
+      <h3>5.1. Ventajas Fundamentales del Efecto Suelo</h3>
+      
+      <p>
+        La superioridad del efecto suelo sobre la aerodinámica convencional se manifiesta en múltiples aspectos:
+      </p>
+
+      <h4>Eficiencia Aerodinámica Superior</h4>
+      <ul>
+        <li><strong>Mayor Downforce por Unidad de Drag:</strong> Como mencionamos, ratios que pueden superar 10:1</li>
+        <li><strong>Menor Sensibilidad al Aire Sucio:</strong> Al generarse desde el fondo, es menos afectado por las turbulencias</li>
+        <li><strong>Distribución de Carga Más Estable:</strong> Centro de presión menos variable con cambios de actitud del auto</li>
+        <li><strong>Mejor Integración de Flujos:</strong> Los túneles Venturi trabajan en armonía con otros elementos aerodinámicos</li>
+      </ul>
+
+      <h4>Beneficios para el Espectáculo</h4>
+      <ul>
+        <li><strong>Capacidad de Seguimiento Mejorada:</strong> Datos muestran reducción del 30% en pérdida de rendimiento al seguir a otro auto</li>
+        <li><strong>Adelantamientos Más Largos:</strong> Posibilidad de mantener ataques durante múltiples curvas</li>
+        <li><strong>Mayor Variedad de Estrategias:</strong> Diferentes enfoques en el setup para aprovechar el efecto suelo</li>
+        <li><strong>Reducción de la Dependencia del DRS:</strong> Aunque se mantiene, su importancia relativa disminuye</li>
+      </ul>
+
+      <h3>5.2. Desafíos Técnicos y Limitaciones</h3>
+
+      <p>
+        El efecto suelo moderno presenta complejos desafíos de ingeniería:
+      </p>
+
+      <ul>
+        <li><strong>Sensibilidad a la Altura de Rodaje:</strong> Variaciones de 5 mm pueden afectar el rendimiento en un 15%</li>
+        <li><strong>Complejidad de Desarrollo:</strong> Requiere sofisticados modelos CFD y horas de túnel de viento</li>
+        <li><strong>Interacciones Complejas:</strong> El comportamiento aerodinámico afecta y es afectado por la suspensión</li>
+        <li><strong>Coste de Desarrollo:</strong> Los equipos con mayores recursos tienen ventaja en la optimización</li>
+        <li><strong>Desgaste de Componentes:</strong> Los fondos sufren mayor deterioro por la proximidad al suelo</li>
+      </ul>
+
+      <blockquote>
+        "El gran desafío del efecto suelo moderno no es generar downforce, sino controlarlo. En los años 70, los autos producían tanto agarre que literalmente destrozaban la estructura de los neumáticos. Hoy, con neumáticos radiales y estructuras más avanzadas, el reto es mantener la estabilidad de la plataforma aerodinámica a través de diferentes condiciones de pista y estados de combustible." - James Allison, Director Técnico de Mercedes-AMG F1
+      </blockquote>
+
+      <h2 id="regreso-2022">6. El Regreso en 2022: El Nuevo Reglamento Técnico</h2>
+
+      <h3>6.1. Filosofía del Reglamento 2022</h3>
+      
+      <p>
+        El regreso del efecto suelo en 2022 formó parte de una revisión completa de la filosofía técnica de la F1:
+      </p>
+
+      <h4>Objetivos Principales</h4>
+      <ul>
+        <li><strong>Autos que puedan competir más cerca:</strong> Reducir la pérdida de rendimiento en estela de otro auto</li>
+        <li><strong>Simplificación aerodinámica externa:</strong> Eliminar elementos complejos que generan turbulencias</li>
+        <li><strong>Promover el adelantamiento:</strong> Crear condiciones para más acción en pista</li>
+        <li><strong>Contener costos:</strong> Introducir presupuesto tope junto con nuevas especificaciones técnicas</li>
+      </ul>
+
+      <h3>6.2. Cambios Reglamentarios Clave</h3>
+
+      <p>
+        El reglamento de 2022 introdujo especificaciones detalladas para el efecto suelo:
+      </p>
+
+      <ul>
+        <li><strong>Fondos Plano-Obligados:</strong> Eliminación de los fondos escalonados complejos</li>
+        <li><strong>Túneles Venturi Regulados:</strong> Dimensiones y volúmenes específicos para los canales</li>
+        <li><strong>Prohibición de Fondos Flexibles:</strong> Estrictos tests de rigidez para prevenir deformaciones</li>
+        <li><strong>Simplificación de Aletines:</strong> Reducción drástica de elementos aerodinámicos externos</li>
+        <li><strong>Neumáticos de 18 Pulgadas:</strong> Mayor rigidez lateral que afecta la interacción con la suspensión</li>
+      </ul>
+
+      <h3>6.3. Diferencias con el Efecto Suelo Histórico</h3>
+
+      <p>
+        El efecto suelo moderno presenta diferencias fundamentales con su predecesor:
+      </p>
+
+      <ul>
+        <li><strong>Control de Altura Pasivo:</strong> En lugar de faldones que rozan el suelo, se usan sistemas de suspensión más sofisticados</li>
+        <li><strong>Mayor Estabilidad:</strong> Los autos modernos son menos propensos a pérdidas repentinas de downforce</li>
+        <li><strong>Integración Electrónica:</strong> Sistemas de control que ayudan a mantener la plataforma estable</li>
+        <li><strong>Materiales Avanzados:</strong> Fibra de carbono que permite diseños más complejos y ligeros</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/comparativa-reglamentos-mobile.jpg" />
+        <img src="../assets/comparativa-reglamentos.jpg" alt="Comparativa visual entre los monoplazas de 2021 y 2022 mostrando los drásticos cambios aerodinámicos" />
+      </picture>
+
+      <h2 id="porpoising-soluciones">7. Porpoising: El Enemigo Inesperado del Efecto Suelo Moderno</h2>
+
+      <h3>7.1. El Fenómeno del "Marsopeo"</h3>
+      
+      <p>
+        El regreso del efecto suelo trajo consigo un problema que había sido subestimado: el "porpoising" o fenómeno de marsopeo. Este comportamiento oscilatorio se caracteriza por:
+      </p>
+
+      <h4>Mecanismo del Porpoising</h4>
+      <ul>
+        <li><strong>Fase de Succión:</strong> A alta velocidad, el efecto suelo genera downforce masivo que comprime la suspensión</li>
+        <li><strong>Sellado del Flujo:</strong> El fondo se acerca demasiado al suelo, interrumpiendo el flujo de aire en los túneles</li>
+        <li><strong>Pérdida de Downforce:</strong> La succión desaparece bruscamente, haciendo que la suspensión se expanda</li>
+        <li><strong>Recuperación del Flujo:</strong> Al elevarse el auto, el aire vuelve a fluir por los túneles y el ciclo se repite</li>
+        <li><strong>Oscilación Establecida:</strong> El auto entra en un ciclo de balanceo que puede alcanzar frecuencias de 3-5 Hz</li>
+      </ul>
+
+      <h3>7.2. Impacto en el Rendimiento y la Seguridad</h3>
+
+      <p>
+        El porpoising tuvo consecuencias significativas en la temporada 2022:
+      </p>
+
+      <ul>
+        <li><strong>Pérdida de Rendimiento:</strong> Los autos afectados podían perder hasta 0.8 segundos por vuelta</li>
+        <li><strong>Problemas de Salud para Pilotos:</strong> Algunos reportaron dolor de espalda y dificultad para concentrarse</li>
+        <li><strong>Desgaste Acelerado:</strong> Componentes de la suspensión y chasis sufrían fatiga prematura</li>
+        <li><strong>Limitaciones de Setup:</strong> Equipos debían sacrificar rendimiento potencial para controlar el fenómeno</li>
+      </ul>
+
+      <h3>7.3. Soluciones y Desarrollos</h3>
+
+      <p>
+        Los equipos implementaron diversas estrategias para combatir el porpoising:
+      </p>
+
+      <ul>
+        <li><strong>Ajuste de Altura de Rodaje:</strong> Incrementar la distancia al suelo, sacrificando downforce por estabilidad</li>
+        <li><strong>Modificaciones de los Túneles:</strong> Rediseñar secciones críticas para retrasar el inicio del fenómeno</li>
+        <li><strong>Refuerzos Estructurales:</strong> Aumentar la rigidez del fondo para minimizar deformaciones</li>
+        <li><strong>Sistemas de Suspensión Activa:</strong> Desarrollos que anticipan y contrarrestan las oscilaciones</li>
+        <li><strong>Ajustes Aerodinámicos:</strong> Modificar el ala trasera y otros elementos para cambiar el balance aerodinámico</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/porpoising-diagram-mobile.jpg" />
+        <img src="../assets/porpoising-diagram.jpg" alt="Diagrama técnico mostrando el ciclo completo del fenómeno de porpoising con fases de compresión y expansión" />
+      </picture>
+
+      <h2 id="comparativa-epocas">8. Comparativa Entre Épocas: Efecto Suelo Antiguo vs. Moderno</h2>
+
+      <h3>8.1. Diferencias Tecnológicas Fundamentales</h3>
+      
+      <p>
+        Aunque comparten principios físicos básicos, el efecto suelo moderno y el histórico presentan diferencias abismales:
+      </p>
+
+      <h4>Tecnología de Materiales</h4>
+      <ul>
+        <li><strong>Años 70-80:</strong> Aleaciones de aluminio, acero, fibra de vidrio</li>
+        <li><strong>Era Moderna:</strong> Fibra de carbono, composites avanzados, aleaciones de titanio</li>
+      </ul>
+
+      <h4>Herramientas de Diseño</h4>
+      <ul>
+        <li><strong>Años 70-80:</strong> Túnel de viento básico, cálculos manuales, prototipos físicos</li>
+        <li><strong>Era Moderna:</strong> CFD avanzado, supercomputación, simuladores virtuales, impresión 3D</li>
+      </ul>
+
+      <h4>Sistemas de Control</h4>
+      <ul>
+        <li><strong>Años 70-80:</strong> Mecánicos puros, ajustes manuales entre sesiones</li>
+        <li><strong>Era Moderna:</strong> Electrónicos complejos, ajustes en tiempo real, telemetría avanzada</li>
+      </ul>
+
+      <h3>8.2. Rendimiento Comparativo</h3>
+
+      <p>
+        A pesar de las décadas de diferencia, las cifras de rendimiento muestran evoluciones interesantes:
+      </p>
+
+      <ul>
+        <li><strong>Downforce Máximo:</strong> Los autos modernos generan aproximadamente 3 veces más downforce que los de 1982</li>
+        <li><strong>Eficiencia Aerodinámica:</strong> La relación downforce/drag ha mejorado en un 40-50%</li>
+        <li><strong>Velocidad en Curvas:</strong> Las velocidades máximas en curvas rápidas han aumentado 30-40 km/h</li>
+        <li><strong>Consistencia:</strong> Los autos modernos mantienen mejor el rendimiento en diferentes condiciones</li>
+      </ul>
+
+      <blockquote>
+        "Comparar el efecto suelo de los años 70 con el actual es como comparar un telégrafo con un smartphone. Comparten el principio básico de comunicación a distancia, pero la implementación, capacidades y sofisticación son órdenes de magnitud diferentes. Los autos modernos no solo generan más downforce, sino que lo hacen de manera más controlada, predecible y eficiente." - Adrian Newey, Director Técnico de Red Bull Racing
+      </blockquote>
+
+      <h2 id="impacto-carreras">9. Impacto en las Carreras y Estrategias: Cambiando el Juego</h2>
+
+      <h3>9.1. Estadísticas de Mejora en Competitividad</h3>
+      
+      <p>
+        Los datos de las primeras temporadas con el nuevo reglamento muestran mejoras significativas:
+      </p>
+
+      <ul>
+        <li><strong>Aumento en Adelantamientos:</strong> Incremento del 25% en adelantamientos por carrera respecto a 2021</li>
+        <li><strong>Reducción del Efecto Estela:</strong> La pérdida de rendimiento a 1 segundo de distancia bajó del 45% al 18%</li>
+        <li><strong>Mayor Variabilidad de Resultados:</strong> Diferentes equipos mostrando fortalezas en distintos tipos de circuito</li>
+        <li><strong>Batallas Más Largas:</strong> Los duelos en pista se extendieron en promedio 2-3 curvas más</li>
+      </ul>
+
+      <h3>9.2. Cambios en las Estrategias de Carrera</h3>
+
+      <p>
+        El efecto suelo ha influido en cómo los equipos abordan las carreras:
+      </p>
+
+      <ul>
+        <li><strong>Importancia del Setup:</strong> Equilibrio entre downforce máximo y control del porpoising</li>
+        <li><strong>Estrategias de Neumáticos:</strong> Menor degradación al poder seguir más limpiamente a otros autos</li>
+        <li><strong>Overtakes en Curvas:</strong> Aumento de adelantamientos en curvas medias y rápidas, no solo en rectas</li>
+        <li><strong>Defensa de Posición:</strong> Nuevas técnicas para defender aprovechando las características del efecto suelo</li>
+      </ul>
+
+      <h3>9.3. Impacto en el Desarrollo de los Equipos</h3>
+
+      <p>
+        La jerarquía entre equipos se vio afectada por el nuevo reglamento:
+      </p>
+
+      <ul>
+        <li><strong>Rediseño de Departamentos:</strong> Reorganización de recursos humanos y técnicos</li>
+        <li><strong>Nuevas Filosofías de Diseño:</strong> Diferentes enfoques para interpretar el reglamento</li>
+        <li><strong>Carrera de Desarrollo Acelerada:</strong> Ritmo de actualizaciones más rápido que en años anteriores</li>
+        <li><strong>Ventaja por Innovación:</strong> Equipos que encontraron soluciones creativas al porpoising ganaron ventaja</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/estadisticas-adelantamientos-mobile.jpg" />
+        <img src="../assets/estadisticas-adelantamientos.jpg" alt="Gráficos comparativos mostrando el aumento en adelantamientos y reducción del efecto estela desde la implementación del nuevo reglamento" />
+      </picture>
+
+      <h2 id="futuro-tecnologia">10. Futuro y Evolución Tecnológica: ¿Hacia Dónde Va el Efecto Suelo?</h2>
+
+      <h3>10.1. Tendencias de Desarrollo</h3>
+      
+      <p>
+        El efecto suelo continuará evolucionando en los próximos años con varias tendencias claras:
+      </p>
+
+      <h4>Optimización de la Eficiencia</h4>
+      <ul>
+        <li><strong>Túneles Venturi Más Complicados:</strong> Geometrías tridimensionales cada vez más complejas</li>
+        <li><strong>Materiales Inteligentes:</strong> Superficies que pueden cambiar forma según las condiciones</li>
+        <li><strong>Sistemas de Control Activo:</strong> Suspensiones que optimizan automáticamente la altura de rodaje</li>
+        <li><strong>Integración con Powertrain:</strong> Sistemas de recuperación de energía que interactúan con la aerodinámica</li>
+      </ul>
+
+      <h3>10.2. Regulaciones Futuras</h3>
+
+      <p>
+        La FIA ya contempla evoluciones del reglamento:
+      </p>
+
+      <ul>
+        <li><strong>Mayor Estandarización:</strong> Posibles componentes comunes para reducir costos</li>
+        <li><strong>Enfoque en Sostenibilidad:</strong> Integración con motores híbridos más eficientes</li>
+        <li><strong>Control del Porpoising:</strong> Nuevos tests y regulaciones para garantizar la seguridad</li>
+        <li><strong>Nuevas Métricas de Performance:</strong> Parámetros que midan específicamente la capacidad de seguimiento</li>
+      </ul>
+
+      <h3>10.3. Tecnologías Disruptivas en el Horizonte</h3>
+
+      <p>
+        A más largo plazo, podríamos ver tecnologías radicalmente nuevas:
+      </p>
+
+      <ul>
+        <li><strong>Aerodinámica Activa Completa:</strong> Superficies que se adaptan en milisegundos</li>
+        <li><strong>Sistemas de Sellado por Aire:</strong> Uso de jets de aire para crear sellos virtuales</li>
+        <li><strong>Materiales Programables:</strong> Estructuras que cambian rigidez según la velocidad</li>
+        <li><strong>IA en Tiempo Real:</strong> Algoritmos que optimizan continuamente el comportamiento aerodinámico</li>
+      </ul>
+
+      <h2 id="conclusion">11. Conclusión: El Nuevo Paradigma de la Fórmula 1</h2>
+
+      <p>
+        El regreso del efecto suelo marca uno de los puntos de inflexión más significativos en la historia técnica de la Fórmula 1. Más que una simple vuelta al pasado, representa la culminación de décadas de avances en comprensión aerodinámica, ciencia de materiales y capacidades computacionales. Lo que en los años 70 era una tecnología cruda y peligrosa se ha transformado en un sistema sofisticado que equilibra rendimiento extremo con seguridad aceptable.
+      </p>
+
+      <p>
+        Los datos de las primeras temporadas bajo el nuevo reglamento confirman que los objetivos fundamentales se están cumpliendo: <strong>los autos pueden seguirse más de cerca, los adelantamientos han aumentado y el espectáculo ha mejorado</strong>. Aunque el fenómeno del porpoising presentó desafíos inesperados, también demostró la capacidad de innovación de los equipos para superar obstáculos técnicos complejos.
+      </p>
+
+      <p>
+        El efecto suelo moderno encarna perfectamente la esencia de la Fórmula 1: la búsqueda constante del equilibrio perfecto entre rendimiento extremo, seguridad, espectáculo y sostenibilidad económica. Su evolución continuará moldeando el futuro del deporte, probablemente incorporando tecnologías que hoy apenas imaginamos.
+      </p>
+
+      <p>
+        En última instancia, el efecto suelo representa mucho más que una solución técnica específica. Es un recordatorio de que en la Fórmula 1, el progreso no siempre significa avanzar hacia lo completamente nuevo; a veces, las ideas más revolucionarias esperan pacientemente el momento tecnológico adecuado para revelar todo su potencial.
+      </p>
+
+      <div class="fuentes-seccion">
+        <h4>Fuentes y Bibliografía Completa:</h4>
+        <ul>
+          <li>
+            <a
+              href="https://www.coches.com/noticias/noticias-motor/el-efecto-suelo-en-la-formula-1/205287"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Coches.com (2022). El efecto suelo en la Fórmula 1, qué es y cómo funciona.</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- TAREA 6: Paginación -->
+      <div class="pagination-nav">
+        <a href="article3.html" class="btn btn-prev"
+          >&larr; Artículo anterior</a
+        >
+        <a href="article5.html" class="btn btn-next"
+          >Artículo siguiente &rarr;</a
+        >
+      </div>
+    </article>
+  </div>
+</main>
+
+    <!-- TAREA 3: Footer Corregido (Rutas relativas ../) -->
     <footer class="footer-principal" id="contacto">
       <div class="container">
-        <a href="#" class="logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              d="M8 3H16C17.1046 3 18 3.89543 18 5V14H6V5C6 3.89543 6.89543 3 8 3ZM19 16V18C19 18.5523 18.5523 19 18 19H17V21H15V19H9V21H7V19H6C5.44772 19 5 18.5523 5 18V16H19Z"
-            ></path>
+        <a href="../index.html" class="logo">
+          <img src="../assets/car-sport-outline.svg" alt="" />
           </svg>
           Cocheando
         </a>
+
+        <!-- Mapa del Sitio -->
+        <div class="footer-mapa-sitio">
+          <h4>Mapa del Sitio</h4>
+          <ul class="footer-enlaces-mapa">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../about.html">Sobre mí</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+            <li><a href="article1.html">Artículos</a></li>
+          </ul>
+        </div>
+
         <ul class="footer-enlaces">
-          <li><a href="#">Política de Privacidad</a></li>
-          <li><a href="#">Términos de Uso</a></li>
-          <li><a href="#">Contacto: info@motorpasion.blog</a></li>
+          <li>
+            <a href="../contacto.html">Contacto: info@motorpasion.blog</a>
+          </li>
+          <li>
+            <a href="#" class="btn-volver-arriba">Volver arriba &uarr;</a>
+          </li>
         </ul>
         <p class="footer-copyright">
           &copy; 2025 Cocheando. Todos los derechos reservados.

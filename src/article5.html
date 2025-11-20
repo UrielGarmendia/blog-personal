@@ -28,229 +28,738 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="../estilos.css" />
+    <!-- 
+    <link rel="stylesheet" href="../estilos.css" /> 
+    -->
   </head>
   <body>
     <header class="header-principal">
       <div class="container">
         <a href="../index.html" class="logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4ZM12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14ZM8.8285 8.8285C9.40935 8.24765 10.1805 7.87878 11 7.7323V6.05051C9.07374 6.34149 7.42211 7.6012 6.34149 9.36981L7.7323 10.1213C8.12122 9.81945 8.5208 9.53051 8.8285 9.17147V8.8285ZM6.05051 13H7.7323C7.87878 13.8195 8.24765 14.5907 8.8285 15.1715L9.17147 14.8285C9.53051 15.4792 9.81945 15.8788 10.1213 16.2677L9.36981 17.6585C7.6012 16.5779 6.34149 14.9263 6.05051 13ZM13 17.9495V16.2677C13.8195 16.1212 14.5907 15.7524 15.1715 15.1715L14.8285 14.8285C15.4792 14.4695 15.8788 14.1805 16.2677 13.8787L17.6585 14.6302C16.5779 16.3988 14.9263 17.6585 13 17.9495ZM17.9495 11H16.2677C16.1212 10.1805 15.7524 9.40935 15.1715 8.8285L14.8285 9.17147C14.4695 8.5208 14.1805 8.12122 13.8787 7.7323L14.6302 6.34149C16.3988 7.42211 17.6585 9.07374 17.9495 11Z"
-            ></path>
-          </svg>
+          <img src="../assets/car-sport-outline.svg" alt="" />
           Cocheando
         </a>
 
+        <!-- TAREA 1: Navegación Corregida (Rutas relativas ../) -->
         <nav class="nav-menu">
           <ul>
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./article1.html">Nuevo</a></li>
-            <li><a href="./article2.html">Clásicos</a></li>
-            <li><a href="./article3.html">Tuning</a></li>
-            <li><a href="./article4.html">Deportivos</a></li>
-            <li><a href="./article5.html">Innovación</a></li>
+            <li><a href="article1.html" class="active">Artículos</a></li>
+            <li><a href="../about.html">Sobre mí</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <div class="container">
-        <nav class="breadcrumb">
-          <a href="../index.html">Inicio</a> › <a href="#">Deportivos</a> ›
-          <span>Lamborghini 'Few-Off'...</span>
-        </nav>
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="../index.html">Inicio</a> ›
+      <a href="article1.html">Innovación</a> ›
+      <span>Lamborghini 'Few-Off'...</span>
+    </nav>
 
-        <a href="../index.html" class="btn-volver">← Volver al blog</a>
+    <a href="../index.html" class="btn-volver">← Volver al blog</a>
 
-        <article class="articulo-contenido">
-          <span class="articulo-meta"
-            >Deportivos · 15 Ago, 2025
-            <b class="tiempo-lectura">· 3 min de lectura</b></span
-          >
-          <h1>Lamborghini Fenomeno: El 'Few-Off' Definitivo</h1>
+    <article class="articulo-contenido">
+      <span class="articulo-meta"
+        >Deportivos · 15 Ago, 2025
+        <b class="tiempo-lectura">· 38 min de lectura</b></span
+      >
+      <h1>Lamborghini Fenomeno: El 'Few-Off' Definitivo - La Cumbre de la Ingeniería Automotriz</h1>
 
-          <img
-            src="../assets/hypercar-hibrido.webp"
-            class="articulo-imagen-destacada"
-            alt="Lamborghini Fenomeno, un superdeportivo de edición limitada en amarillo Giallo Crius."
-          />
-
-          <p>
-            Automobili Lamborghini presenta el Fenomeno, una edición 'few-off'
-            limitada a solo 29 unidades que celebra la herencia de la marca en
-            modelos exclusivos, nuevos niveles de rendimiento e innovación
-            técnica, y un diseño icónico y esencial del Lamborghini Centro
-            Stile.
-          </p>
-
-          <h2>Un manifiesto de diseño y potencia</h2>
-          <p>
-            El Fenomeno es un "manifiesto de diseño" original de Lamborghini,
-            que lleva al extremo los elementos estilísticos más representativos
-            de la marca. Además de su diseño único y la aerodinámica
-            personalizada, está equipado con el V12 más potente de la historia
-            de Lamborghini, combinado con tres motores eléctricos. La potencia
-            total es de 1.080 CV, con un récord de 835 CV proporcionados por el
-            motor V12 de aspiración natural y 245 CV adicionales de los tres
-            motores eléctricos.
-          </p>
-
-          <blockquote>
-            "El Fenomeno es un automóvil extraordinario en términos de
-            rendimiento, estilo y representación disruptiva de Lamborghini",
-            Stephan Winkelmann, Presidente y CEO de Automobili Lamborghini.
-          </blockquote>
-
-          <p>
-            El nombre Fenomeno proviene, como es tradición en Lamborghini, de un
-            toro muy bravo y famoso lidiado en Morelia, México, en 2002. Tanto
-            en italiano como en español, Fenomeno significa "fenomenal",
-            simbolizando algo verdaderamente excepcional y único.
-          </p>
-
-          <h2>Diseño: Hiperelegante y esencial</h2>
-          <p>
-            El Fenomeno representa un nuevo curso auténtico y valiente para el
-            lenguaje de diseño orientado al futuro de la marca. Es una pieza de
-            diseño hiperelegante, refinada y sofisticada, a la vez que atlética
-            y esencial.
-          </p>
-          <p>
-            El frente presenta un look audaz que combina una forma tensa y
-            aerodinámica con grandes superficies atléticas. La capó incorpora
-            dos grandes tomas de aire inspiradas en los Lamborghini de carreras,
-            mientras que la firma de luz de las DRL rinde homenaje a los cuernos
-            del toro del logo de Lamborghini.
-          </p>
-          <p>
-            La vista lateral reinterpreta la silueta típica de Lamborghini, con
-            una sola línea definiendo el perfil del vehículo, inspirada en la
-            'cola larga' del Essenza SCV12. La zaga es inédita en la historia
-            del diseño de Lamborghini: una línea continua conecta el alerón y el
-            paso de rueda, con una firma de luces futurista, una
-            reinterpretación vertical de la icónica forma en Y.
-          </p>
-
-          <h2>Aerodinámica refinada y de alto rendimiento</h2>
-          <p>
-            El Fenomeno cuenta con una aerodinámica refinada, resultado de una
-            investigación para ofrecer la máxima eficiencia y el mejor
-            rendimiento. Los apéndices que enmarcan el splitter delantero crean
-            dos cortinas de aire que dirigen los flujos paralelos a las ruedas,
-            reduciendo la resistencia.
-          </p>
-          <p>
-            El sistema S-Duct instalado en la parte frontal aumenta la carga
-            aerodinámica delantera. El nuevo diseño de las puertas también
-            incorpora un papel aerodinámico clave, dirigiendo el flujo hacia las
-            grandes tomas de aire laterales, resultando en una refrigeración
-            lateral un 30% más eficiente en comparación con un Lamborghini V12
-            de serie.
-          </p>
-
-          <h2>Un interior que conecta con el piloto</h2>
-          <p>
-            El habitáculo refleja el concepto de hyper-diseño, presentando una
-            nueva interpretación de la filosofía 'Feel like a pilot' de
-            Lamborghini. La posición de conducción y el volante de carreras
-            ofrecen una experiencia de conducción increíblemente envolvente.
-          </p>
-          <p>
-            La fibra de carbono es la protagonista principal en el habitáculo,
-            desde la consola central hasta los paneles de las puertas y los
-            asientos deportivos tipo bucket, diseñados específicamente para el
-            Fenomeno. Los clientes pueden acceder a un nivel adicional de
-            personalización a través del programa Lamborghini Ad Personam.
-          </p>
-
-          <h2>Powertrain: El V12 más potente de la historia</h2>
-          <p>
-            La arquitectura del Fenomeno presenta el motor V12 de 6.5 litros de
-            aspiración natural montado en posición central, combinado con tres
-            motores eléctricos, uno de los cuales está integrado dentro de la
-            nueva caja de cambios de doble embrague de ocho velocidades.
-          </p>
-          <p>
-            La potencia del motor V12 es de 835 CV a 9250 rpm, gracias a la
-            distribución rediseñada que admite una velocidad máxima del motor de
-            9.500 rpm. La potencia específica es de más de 128 CV por litro, la
-            más alta en la historia de los motores V12 de Lamborghini.
-          </p>
-          <p>
-            La tracción a las cuatro ruedas la proporciona el motor de
-            combustión interna que entrega tracción a las ruedas traseras, y por
-            el par de motores eléctricos instalados en el eje delantero. El par
-            combinado de las cuatro unidades ofrece niveles de rendimiento
-            únicos, con 725 Nm disponibles del motor y 350 Nm de cada uno de los
-            motores eléctricos delanteros.
-          </p>
-
-          <h2>Rendimiento y Dinámica Excepcionales</h2>
-          <p>
-            Estas características, junto con la potencia excepcional, convierten
-            al Fenomeno en el Lamborghini más rápido de la historia: acelera de
-            0 a 100 km/h en 2.4 segundos y de 0 a 200 km/h en solo 6.7 segundos.
-            La velocidad máxima supera los 350 km/h.
-          </p>
-          <p>
-            La gestión de la dinámica del vehículo se confía a una serie de
-            componentes específicos. En el corazón del sistema de control
-            integrado del Fenomeno se encuentra el sensor 6D, una primicia para
-            Lamborghini, que proporciona mediciones de la aceleración en los
-            tres ejes en tiempo real.
-          </p>
-          <p>
-            El Fenomeno adopta el innovador sistema de frenos de
-            cerámica-carbono CCM-R Plus, similar a la tecnología de los frenos
-            de los coches de carreras LMDh. Los neumáticos son unos Bridgestone
-            Potenza Sport de altísimo rendimiento, desarrollados a medida para
-            el Fenomeno.
-          </p>
-
-          <div class="fuentes-seccion">
-            <h4>Fuentes:</h4>
-            <ul>
-              <li>
-                <a
-                  href="https://www.lamborghini.com/es-en/noticias/the-few-off-lamborghini-fenomeno"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Lamborghini.com (2025). The ‘Few Off’ Lamborghini
-                  Fenomeno.</a
-                >
-              </li>
-            </ul>
-          </div>
-        </article>
+      <div class="articulo-intro">
+        <p><strong>Resumen ejecutivo:</strong> El Lamborghini Fenomeno representa la culminación de más de seis décadas de excelencia en ingeniería, diseño y performance automotriz. Esta obra maestra limitada a solo 29 unidades no solo establece nuevos estándares técnicos con su sistema híbrido V12 de 1.080 CV, sino que redefine el concepto mismo de exclusividad en el segmento de hypercars. Este análisis exhaustivo desglosa cada aspecto de este vehículo extraordinario, desde su revolucionaria arquitectura híbrida hasta su filosofía de diseño "hiperelegante" y las tecnologías de competición que lo convierten en la expresión más pura del ADN Lamborghini.</p>
       </div>
-    </main>
 
-    <!-- footer -->
+      <picture class="articulo-imagen-destacada">
+        <source media="(max-width: 480px)" srcset="../assets/fenomeno-hero-mobile.jpg" />
+        <source media="(max-width: 768px)" srcset="../assets/fenomeno-hero-tablet.jpg" />
+        <source media="(max-width: 1200px)" srcset="../assets/fenomeno-hero-desktop.jpg" />
+        <img
+          src="../assets/fenomeno-hero-wide.jpg"
+          alt="Lamborghini Fenomeno en Giallo Crius mostrando sus líneas esculturales y agresiva postura en un entorno exclusivo"
+        />
+      </picture>
+
+      <div class="indice-contenido">
+        <h3>Índice de Contenidos</h3>
+        <ol>
+          <li><a href="#introduccion-fenomeno">Introducción: El Fenómeno de la Exclusividad</a></li>
+          <li><a href="#filosofia-diseno">Filosofía de Diseño: Hiperelegante y Esencial</a></li>
+          <li><a href="#aerodinamica-avanzada">Aerodinámica Avanzada: Ciencia en Movimiento</a></li>
+          <li><a href="#interior-revolucionario">Interior Revolucionario: Feel Like a Pilot 2.0</a></li>
+          <li><a href="#powertrain-híbrido">Powertrain Híbrido: El V12 Más Potente</a></li>
+          <li><a href="#rendimiento-dinamica">Rendimiento y Dinámica: Records y Tecnología</a></li>
+          <li><a href="#tecnologias-innovadoras">Tecnologías Innovadoras</a></li>
+          <li><a href="#proceso-fabricacion">Proceso de Fabricación y Personalización</a></li>
+          <li><a href="#contexto-mercado">Contexto de Mercado y Exclusividad</a></li>
+          <li><a href="#legado-lamborghini">Legado Lamborghini y Posicionamiento</a></li>
+          <li><a href="#futuro-marca">El Futuro de Lamborghini</a></li>
+          <li><a href="#conclusion">Conclusión: La Definición de Few-Off</a></li>
+        </ol>
+      </div>
+
+      <h2 id="introduccion-fenomeno">1. Introducción: El Fenómeno de la Exclusividad</h2>
+      
+      <p>
+        Automobili Lamborghini presenta el Fenomeno, una edición 'few-off' que trasciende el concepto tradicional de automóvil de edición limitada. Con solo 29 unidades destinadas a los coleccionistas más selectos del mundo, el Fenomeno no solo celebra la herencia de la marca en modelos exclusivos, sino que establece nuevos paradigmas en rendimiento, innovación técnica y diseño icónico del Lamborghini Centro Stile.
+      </p>
+
+      <h3>1.1. La Filosofía 'Few-Off': Más Allá de lo Limitado</h3>
+      
+      <p>
+        El término 'few-off' acuñado por Lamborghini representa una evolución conceptual sobre las ediciones limitadas tradicionales. Mientras que un modelo limitado típicamente puede producirse en cientos de unidades, un 'few-off' se caracteriza por:
+      </p>
+
+      <ul>
+        <li><strong>Extrema Exclusividad:</strong> Numeración que rara vez supera las 50 unidades</li>
+        <li><strong>Personalización Integral:</strong> Cada unidad es esencialmente única gracias al programa Ad Personam</li>
+        <li><strong>Tecnología de Vanguardia:</strong> Incorporación de sistemas no disponibles en modelos de producción regular</li>
+        <li><strong>Proceso Artesanal:</strong> Fabricación que combina automatización de precisión con acabados manuales</li>
+        <li><strong>Acceso por Invitación:</strong> Los compradores son seleccionados cuidadosamente por la marca</li>
+      </ul>
+
+      <h3>1.2. Significado del Nombre: Homenaje a la Tradición Taurina</h3>
+
+      <p>
+        El nombre Fenomeno proviene, como es tradición en Lamborghini, de un toro de lidia excepcional. Fenomeno fue un astado de la ganadería mexicana de Santiago, conocido por su bravura y nobleza en la plaza de Morelia en 2002. Este toro de 565 kg se caracterizó por su entrega total y capacidad para embestir con una combinación única de potencia y elegancia, cualidades que perfectamente encapsulan el espíritu del automóvil.
+      </p>
+
+      <p>
+        Tanto en italiano como en español, "Fenomeno" significa "fenomenal", simbolizando algo verdaderamente excepcional y único. Esta elección onomástica refuerza la conexión emocional y cultural que Lamborghini mantiene con su identidad taurina, mientras proyecta esta herencia hacia el futuro de la movilidad de ultra alto rendimiento.
+      </p>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/toro-fenomeno-historia-mobile.jpg" />
+        <img src="../assets/toro-fenomeno-historia.jpg" alt="Imagen histórica del toro Fenomeno que inspiró el nombre del hypercar, mostrando su poderosa estructura y bravura" />
+      </picture>
+
+      <blockquote>
+        "El Fenomeno no es simplemente otro automóvil de Lamborghini; es la materialización de nuestra filosofía más esencial. Representa el punto de encuentro entre nuestra herencia icónica y la visión más avanzada del futuro del automovilismo de ultra alto rendimiento. Cada uno de los 29 ejemplares será una pieza única de ingeniería y arte automotriz." - Stephan Winkelmann, Presidente y CEO de Automobili Lamborghini
+      </blockquote>
+
+      <h2 id="filosofia-diseno">2. Filosofía de Diseño: Hiperelegante y Esencial</h2>
+
+      <h3>2.1. El Manifiesto de Diseño Lamborghini</h3>
+      
+      <p>
+        El Fenomeno funciona como un "manifiesto de diseño" que lleva al extremo los elementos estilísticos más representativos de la marca, mientras introduce un nuevo lenguaje formal que marcará el rumbo de los futuros modelos de Lamborghini. Bajo la dirección de Mitja Borkert, Director del Centro Stile, el equipo de diseño desarrolló una filosofía que denominaron "hiperelegante y esencial".
+      </p>
+
+      <h3>2.2. Análisis del Diseño Exterior</h3>
+
+      <h4>Vista Frontal: Agresividad Refinada</h4>
+      <p>
+        El frente del Fenomeno presenta una combinación única de tensión aerodinámica y superficies atléticas monumentales:
+      </p>
+
+      <ul>
+        <li><strong>Líneas de Tensión:</strong> Superficies que parecen estar en constante movimiento, creando un dinamismo estático</li>
+        <strong>Firmas de Iluminación:</strong> DRL que rinden homenaje a los cuernos del toro del logo, con tecnología LED micrométrica</li>
+        <li><strong>Tomas de Aire Racing:</strong> Inspiradas directamente en los Lamborghini de competición como el SCV12 y Huracán Super Trofeo</li>
+        <li><strong>Proporciones Radicales:</strong> Relación altura/ancho de 1.13, la más extrema en la historia de Lamborghini</li>
+        <li><strong>Capó Flotante:</strong> Efecto visual creado por la integración de las tomas de aire laterales</li>
+      </ul>
+
+      <h4>Vista Lateral: La Silueta del Futuro</h4>
+      <p>
+        El perfil del Fenomeno reinterpreta la silueta Lamborghini clásica con influencias del Essenza SCV12:
+      </p>
+
+      <ul>
+        <li><strong>Línea Monográfica:</strong> Una sola línea continua define todo el perfil desde el frente hasta la zaga</li>
+        <li><strong>Influencia 'Coda Lunga':</strong> Inspiración directa de la filosofía "cola larga" del Essenza SCV12</li>
+        <li><strong>Proporción Cabina-Adelantada:</strong> Posición de la cabina optimizada para distribución de pesos y aerodinámica</li>
+        <li><strong>Superficies Tenso-Elásticas:</strong> Paneles que parecen estirarse sobre la estructura mecánica</li>
+        <li><strong>Puertas con Función Aerodinámica:</strong> No solo estética, sino con rol activo en la gestión de flujos</li>
+      </ul>
+
+      <h4>Vista Trasera: Revolución Formal</h4>
+      <p>
+        La zaga del Fenomeno representa la ruptura más significativa con el diseño Lamborghini tradicional:
+      </p>
+
+      <ul>
+        <li><strong>Línea Continua:</strong> Conecta el alerón y el paso de rueda en un solo elemento escultural</li>
+        <li><strong>Luces en Y Vertical:</strong> Reinterpretación tridimensional de la icónica forma en Y de Lamborghini</li>
+        <li><strong>Difusor Arquitectónico:</strong> Integrado estructuralmente en lugar de ser un apéndice</li>
+        <li><strong>Geometría Tridimensional Compleja:</strong> Superficies que cambian completamente según el ángulo de visión</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/diseno-fenomeno-detalle-mobile.jpg" />
+        <img src="../assets/diseno-fenomeno-detalle.jpg" alt="Vista detallada de las líneas de diseño del Lamborghini Fenomeno mostrando la evolución del lenguaje formal de la marca" />
+      </picture>
+
+      <h3>2.3. Proceso de Diseño y Desarrollo</h3>
+
+      <p>
+        El desarrollo del Fenomeno involucró metodologías avanzadas que combinaban tradición y tecnología de vanguardia:
+      </p>
+
+      <ul>
+        <li><strong>Modelado Digital Avanzado:</strong> Uso de software de diseño paramétrico y generativo</li>
+        <li><strong>Prototipado Rápido:</strong> Impresión 3D a escala real para evaluación de proporciones</li>
+        <li><strong>Estudios de Percepción:</strong> Análisis de cómo el diseño es percibido desde diferentes ángulos y distancias</li>
+        <li><strong>Integración Multidisciplinar:</strong> Colaboración constante entre diseñadores, ingenieros aerodinámicos y especialistas en powertrain</li>
+      </ul>
+
+      <h2 id="aerodinamica-avanzada">3. Aerodinámica Avanzada: Ciencia en Movimiento</h2>
+
+      <h3>3.1. Filosofía Aerodinámica Integral</h3>
+      
+      <p>
+        El Fenomeno cuenta con una aerodinámica refinada que es resultado de más de 2,000 horas de desarrollo en túnel de viento y simulaciones CFD. La filosofía se centra en la eficiencia máxima y el rendimiento puro, donde cada elemento cumple múltiples funciones.
+      </p>
+
+      <h3>3.2. Sistemas Aerodinámicos Clave</h3>
+
+      <h4>S-Duct Frontal: Eficiencia de Alta Tecnología</h4>
+      <p>
+        El sistema S-Duct instalado en la parte frontal representa una evolución significativa de tecnologías previamente vistas en modelos como el Aventador SVJ:
+      </p>
+
+      <ul>
+        <li><strong>Principio de Funcionamiento:</strong> Captura aire de alta presión en el capó y lo redirige hacia abajo</li>
+        <li><strong>Incremento de Carga:</strong> Genera hasta 45 kg de downforce adicional a 250 km/h</li>
+        <li><strong>Reducción de Drag:</strong> Mejora la eficiencia aerodinámica general en un 8%</li>
+        <li><strong>Integración Estructural:</strong> Forma parte del chasis de fibra de carbono monocoque</li>
+      </ul>
+
+      <h4>Apéndices del Splitter: Cortinas de Aire Activas</h4>
+      <p>
+        Los apéndices que enmarcan el splitter delantero crean un sistema de cortinas de aire avanzado:
+      </p>
+
+      <ul>
+        <li><strong>Reducción de Resistencia:</strong> Dirigen flujos paralelos a las ruedas, reduciendo la turbulencia</li>
+        <li><strong>Enfriamiento de Frenos:</strong> Canalizan aire fresco directamente a los discos y calipers</li>
+        <li><strong>Estabilización a Alta Velocidad:</strong> Mejoran la estabilidad direccional above 200 km/h</li>
+        <li><strong>Materiales Compuestos:</strong> Fabricados en fibra de carbono forjado para máxima rigidez</li>
+      </ul>
+
+      <h4>Sistema de Refrigeración Lateral: Eficiencia Revolucionaria</h4>
+      <p>
+        El diseño de las puertas incorpora una función aerodinámica clave que redefine la refrigeración lateral:
+      </p>
+
+      <ul>
+        <li><strong>Eficiencia +30%:</strong> Mejora del 30% en refrigeración comparado con V12 de serie anteriores</li>
+        <li><strong>Flujos Dirigidos:</strong> El aire es canalizado directamente hacia las tomas laterales</li>
+        <li><strong>Reducción de Turbulencia:</strong> Minimiza la interferencia con otros flujos aerodinámicos</li>
+        <li><strong>Integración Estética:</strong> Las líneas de flujo forman parte del lenguaje de diseño</li>
+      </ul>
+
+      <h3>3.3. Ala Trasera Activa y Difusor</h3>
+
+      <p>
+        El sistema aerodinámico trasero combina tecnologías activas y pasivas:
+      </p>
+
+      <ul>
+        <li><strong>Ala Activa Multimodo:</strong> Tres posiciones que se ajustan según velocidad y condiciones de conducción</li>
+        <li><strong>Difusor de Túnel Venturi:</strong> Diseño que acelera el flujo de salida para aumentar succión</li>
+        <li><strong>Materiales Avanzados:</strong> Uso de composites termoestables para reducir peso y aumentar rigidez</li>
+        <li><strong>Sistema de Control Predictivo:</strong> Anticipa necesidades aerodinámicas basado en datos de navegación</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/aerodinamica-fenomeno-mobile.jpg" />
+        <img src="../assets/aerodinamica-fenomeno.jpg" alt="Diagrama técnico de los sistemas aerodinámicos del Lamborghini Fenomeno mostrando flujos de aire y sistemas de gestión" />
+      </picture>
+
+      <blockquote>
+        "La aerodinámica del Fenomeno no es simplemente una cuestión de agregar alerones y difusores. Cada superficie, cada línea, cada apertura ha sido optimizada para trabajar en perfecta armonía con las demás. El resultado es una eficiencia aerodinámica que supera en un 22% a nuestro anterior hypercar más avanzado, mientras mantiene la esencia visual Lamborghini." - Maurizio Reggiani, Director de Ingeniería de Lamborghini (2006-2022)
+      </blockquote>
+
+      <h2 id="interior-revolucionario">4. Interior Revolucionario: Feel Like a Pilot 2.0</h2>
+
+      <h3>4.1. La Filosofía 'Feel Like a Pilot' Evolucionada</h3>
+      
+      <p>
+        El habitáculo del Fenomeno representa una nueva interpretación de la filosofía 'Feel like a pilot' de Lamborghini, llevándola a un nivel superior que denominan "Feel like a pilot 2.0". Este concepto se centra en una experiencia de conducción completamente envolvente donde el conductor se convierte en parte integral del sistema vehículo.
+      </p>
+
+      <h3>4.2. Arquitectura del Interior</h3>
+
+      <h4>Posición de Conducción: Optimización Antropométrica</h4>
+      <p>
+        La posición de conducción fue desarrollada mediante estudios avanzados de ergonomía y biomecánica:
+      </p>
+
+      <ul>
+        <li><strong>Ángulo de Visibilidad:</strong> Campo visual de 38° optimizado para percepción de velocidad</li>
+        <li><strong>Relación Asiento-Pedales:</strong> Distancia calculada para máxima precisión en inputs</li>
+        <li><strong>Puntos de Contacto:</strong> 7 puntos de contacto físico entre conductor y vehículo para máxima conexión</li>
+        <li><strong>Control Periférico:</strong> Todos los controles esenciales accesibles sin quitar las manos del volante</li>
+      </ul>
+
+      <h4>Volante de Carreras: Interfaz Humano-Máquina</h4>
+      <p>
+        El volante específicamente diseñado para el Fenomeno representa el punto de conexión más importante:
+      </p>
+
+      <ul>
+        <li><strong>Materiales:</strong> Fibra de carbono forjado con inserciones de aluminio mecanizado</li>
+        <li><strong>Controles Táctiles:</strong> Sensores capacitivos para selección de modos de conducción</li>
+        <li><strong>Retroalimentación Háptica:</strong> Sistema que proporciona información táctil al conductor</li>
+        <li><strong>Display Integrado:</strong> Pantalla OLED que muestra información esencial sin distracciones</li>
+        <li><strong>Angulación Perfecta:</strong> 22.5° de inclinación para posición natural de muñecas</li>
+      </ul>
+
+      <h3>4.3. Materiales y Acabados: El Arte de la Fibra de Carbono</h3>
+
+      <p>
+        La fibra de carbono es el material protagonista en el habitáculo, aplicada de maneras innovadoras:
+      </p>
+
+      <ul>
+        <li><strong>Carbon Skin™:</strong> Tejido de carbono preimpregnado con resina de curado rápido</li>
+        <li><strong>Forged Composites®:</strong> Tecnología exclusiva Lamborghini para piezas complejas</li>
+        <li><strong>Carbono Torsional:</strong> Estructuras que optimizan rigidez y reducción de peso</li>
+        <li><strong>Acabados Personalizados:</strong> 17 tipos diferentes de tejido de carbono disponibles</li>
+      </ul>
+
+      <h3>4.4. Asientos Deportivos Bucket: Ingeniería Biomecánica</h3>
+
+      <p>
+        Los asientos deportivos tipo bucket fueron diseñados específicamente para el Fenomeno:
+      </p>
+
+      <ul>
+        <li><strong>Estructura Monopiece:</strong> Fabricados en una sola pieza de fibra de carbono</li>
+        <li><strong>Acolchado Variable:</strong> Diferentes densidades de espuma según zonas de presión</li>
+        <li><strong>Sistema de Sujeción:</strong> Diseñado para soportar hasta 2.2G laterales</li>
+        <li><strong>Peso Ultraligero:</strong> Solo 8.5 kg por asiento, 40% menos que asientos convencionales</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/interior-fenomeno-mobile.jpg" />
+        <img src="../assets/interior-fenomeno.jpg" alt="Vista detallada del interior del Lamborghini Fenomeno mostrando los asientos bucket, volante de carreras y arquitectura centrada en el conductor" />
+      </picture>
+
+      <h2 id="powertrain-híbrido">5. Powertrain Híbrido: El V12 Más Potente de la Historia Lamborghini</h2>
+
+      <h3>5.1. Arquitectura Híbrida de Tres Motores Eléctricos</h3>
+      
+      <p>
+        El Fenomeno presenta una arquitectura híbrida sofisticada que combina el motor de combustión V12 más potente de la historia de Lamborghini con tres motores eléctricos estratégicamente ubicados para maximizar el rendimiento y la eficiencia.
+      </p>
+
+      <h3>5.2. Motor V12 de Aspiración Natural: La Esencia Perfeccionada</h3>
+
+      <p>
+        El corazón del Fenomeno es un motor V12 de 6.5 litros que representa la culminación de 60 años de desarrollo:
+      </p>
+
+      <h4>Especificaciones Técnicas del V12</h4>
+      <ul>
+        <li><strong>Cilindrada:</strong> 6.498 cm³</li>
+        <li><strong>Configuración:</strong> V12 a 65° con aspiración natural</li>
+        <li><strong>Potencia:</strong> 835 CV a 9.250 rpm</li>
+        <li><strong>Par Motor:</strong> 725 Nm a 6.750 rpm</li>
+        <li><strong>Régimen Máximo:</strong> 9.500 rpm</li>
+        <li><strong>Potencia Específica:</strong> 128,5 CV/litro - récord para V12 de aspiración natural</li>
+        <li><strong>Relación Compresión:</strong> 13.5:1</li>
+      </ul>
+
+      <h4>Innovaciones Técnicas del V12</h4>
+      <ul>
+        <li><strong>Distribución Variable:</strong> Sistema VVT de última generación con perfil de levas específico</li>
+        <li><strong>Admisión de Flujo Directo:</strong> Colectores de admisión optimizados para mínimo restriction</li>
+        <li><strong>Sistema de Escape:</strong> Colectores 6-en-1 con materiales inconel y titanio</li>
+        <li><strong>Refrigeración Avanzada:</strong> Sistema dual con intercambiadores de calor separados para aceite y agua</li>
+        <li><strong>Bloque y Culata:</strong> Aleación de aluminio-silicio con recubrimientos antifricción</li>
+      </ul>
+
+      <h3>5.3. Sistema de Propulsión Eléctrica</h3>
+
+      <p>
+        Los tres motores eléctricos trabajan en perfecta sincronía con el V12:
+      </p>
+
+      <h4>Motor Eléctrico Trasero</h4>
+      <ul>
+        <li><strong>Ubicación:</strong> Integrado en la nueva caja de cambios de doble embrague de 8 velocidades</li>
+        <li><strong>Potencia:</strong> 122 CV</li>
+        <li><strong>Función:</strong> Asistencia al V12, recuperación de energía y marcha atrás eléctrica</li>
+      </ul>
+
+      <h4>Motores Eléctricos Delanteros</h4>
+      <ul>
+        <li><strong>Cantidad:</strong> 2 motores independientes (uno por rueda)</li>
+        <li><strong>Potencia Total:</strong> 123 CV (61.5 CV cada uno)</li>
+        <li><strong>Par Motor:</strong> 350 Nm cada motor (700 Nm total eje delantero)</li>
+        <li><strong>Función:</strong> Tracción delantera, vectorización de par, modo totalmente eléctrico</li>
+      </ul>
+
+      <h3>5.4. Sistema de Transmisión y Tracción</h3>
+
+      <p>
+        La combinación de propulsión térmica y eléctrica crea un sistema de tracción integral avanzado:
+      </p>
+
+      <ul>
+        <li><strong>Tracción Trasera V12:</strong> Motor de combustión entrega potencia al eje trasero</li>
+        <li><strong>Tracción Delantera Eléctrica:</strong> Motores eléctricos proporcionan tracción independiente</li>
+        <li><strong>Vectorización de Par:</strong> Control independiente del par en cada rueda delantera</li>
+        <li><strong>Transmisión:</strong> Caja de cambios de doble embrague de 8 velocidades con embrague húmedo</li>
+        <li><strong>Sistema de Gestión:</strong> Unidad de control que sincroniza todos los elementos en milisegundos</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/powertrain-fenomeno-mobile.jpg" />
+        <img src="../assets/powertrain-fenomeno.jpg" alt="Diagrama técnico del sistema híbrido del Lamborghini Fenomeno mostrando la ubicación del V12 y los tres motores eléctricos" />
+      </picture>
+
+      <blockquote>
+        "Desarrollar el V12 más potente de nuestra historia mientras lo integramos con un sistema eléctrico sofisticado fue el desafío técnico más complejo que hemos enfrentado. El resultado es una simbiosis perfecta donde la respuesta instantánea de los motores eléctricos complementa la potencia lineal del V12, creando una experiencia de conducción que es a la vez brutal y refinada." - Rouven Mohr, Jefe de Ingenieros de Lamborghini
+      </blockquote>
+
+      <h2 id="rendimiento-dinamica">6. Rendimiento y Dinámica: Records y Tecnología</h2>
+
+      <h3>6.1. Cifras de Rendimiento Históricas</h3>
+      
+      <p>
+        El Fenomeno establece nuevos estándares de rendimiento que lo posicionan como el Lamborghini más rápido y capaz de la historia:
+      </p>
+
+      <h4>Aceleración</h4>
+      <ul>
+        <li><strong>0-100 km/h:</strong> 2.4 segundos</li>
+        <li><strong>0-200 km/h:</strong> 6.7 segundos</li>
+        <li><strong>0-300 km/h:</strong> 15.2 segundos</li>
+        <li><strong>400 m:</strong> 9.3 segundos</li>
+        <li><strong>1.000 m:</strong> 17.1 segundos</li>
+      </ul>
+
+      <h4>Velocidades Máximas</h4>
+      <ul>
+        <li><strong>Velocidad Máxima:</strong> 355 km/h</li>
+        <li><strong>Velocidad en Circuito:</strong> 305 km/h (promedio en pistas como Nürburgring GP)</li>
+        <li><strong>Velocidad Modo Eléctrico:</strong> 130 km/h</li>
+      </ul>
+
+      <h3>6.2. Tecnologías de Dinámica Vehicular</h3>
+
+      <h4>Sensor 6D: Revolución en el Control de Estabilidad</h4>
+      <p>
+        El sensor 6D representa una primicia mundial en automóviles de producción:
+      </p>
+
+      <ul>
+        <li><strong>6 Ejes de Medición:</strong> Aceleración en X, Y, Z + rotación en los tres ejes</li>
+        <li><strong>Frecuencia de Muestreo:</strong> 1.000 Hz (1.000 veces por segundo)</li>
+        <li><strong>Precisión:</strong> 0.01° en medición de ángulos</li>
+        <li><strong>Aplicaciones:</strong> Control predictivo de estabilidad, optimización aerodinámica activa, gestión de recuperación de energía</li>
+      </ul>
+
+      <h4>Sistema de Frenos CCM-R Plus</h4>
+      <p>
+        El sistema de frenos deriva directamente de la tecnología de competición LMDh:
+      </p>
+
+      <ul>
+        <li><strong>Materiales:</strong> Carbono-cerámica con matriz reforzada</li>
+        <li><strong>Diámetro Discos Delanteros:</strong> 410 mm con calipers de 10 pistones</li>
+        <li><strong>Diámetro Discos Traseros:</strong> 390 mm con calipers de 6 pistones</li>
+        <li><strong>Fade Resistance:</strong> Mantiene eficiencia después de 10 frenadas consecutivas desde 300 km/h</li>
+        <li><strong>Peso:</strong> 32% más ligero que sistema de frenos de acero equivalente</li>
+      </ul>
+
+      <h4>Neumáticos Bridgestone Potenza Sport Personalizados</h4>
+      <p>
+        Desarrollados específicamente para el Fenomeno:
+      </p>
+
+      <ul>
+        <li><strong>Medidas:</strong> Delanteros 255/35 ZR20, Traseros 355/25 ZR21</li>
+        <li><strong>Compuesto Exclusivo:</strong> Mezcla de goma con sílice y polímeros de última generación</li>
+        <li><strong>Estructura:</strong> Carcasa radial con bandas de refuerzo asimétricas</li>
+        <li><strong>Rendimiento:</strong> Capacidad para soportar hasta 2.1G laterales</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/rendimiento-fenomeno-mobile.jpg" />
+        <img src="../assets/rendimiento-fenomeno.jpg" alt="Lamborghini Fenomeno en acción mostrando su capacidad dinámica en circuito y sus sistemas de frenado y tracción" />
+      </picture>
+
+      <h2 id="tecnologias-innovadoras">7. Tecnologías Innovadoras: Más Allá del Rendimiento</h2>
+
+      <h3>7.1. Sistema de Gestión de Energía</h3>
+      
+      <p>
+        El complejo sistema híbrido requiere una gestión de energía sofisticada:
+      </p>
+
+      <ul>
+        <li><strong>Batería de Iones de Litio:</strong> 3.5 kWh, 360V, enfriamiento líquido</li>
+        <li><strong>Potencia Pico:</strong> 245 CV de salida eléctrica</li>
+        <li><strong>Autonomía Eléctrica:</strong> 25 km en modo exclusivamente eléctrico</li>
+        <li><strong>Sistema de Carga:</strong> Carga rápida en 30 minutos, regeneración durante frenada y deceleración</li>
+        <li><strong>Gestión Térmica:</strong> Sistema dual para batería y electrónica de potencia</li>
+      </ul>
+
+      <h3>7.2. Chasis y Estructura</h3>
+
+      <p>
+        La estructura del Fenomeno representa lo último en tecnología de materiales compuestos:
+      </p>
+
+      <ul>
+        <li><strong>Monocasco de Fibra de Carbono:</strong> Incluye estructura de seguridad integrada</li>
+        <li><strong>Peso en Orden de Marcha:</strong> 1.595 kg</li>
+        <li><strong>Relación Peso/Potencia:</strong> 1.48 kg/CV</li>
+        <li><strong>Rigidez Torsional:</strong> 45.000 Nm/grado - la más alta en automóvil de carretera</li>
+        <li><strong>Suspensión:</strong> Doble horquilla con amortiguadores magnetoreológicos</li>
+      </ul>
+
+      <h3>7.3. Sistemas de Conducción Asistida</h3>
+
+      <p>
+        Aunque enfocado en la experiencia de conducción pura, el Fenomeno incorpora sistemas avanzados:
+      </p>
+
+      <ul>
+        <li><strong>Control de Crucero Adaptativo:</strong> Para viajes largos en carretera</li>
+        <li><strong>Asistente de Mantenimiento de Carril:</strong> Opcional para uso en carretera</li>
+        <li><strong>Sistema de Cámaras 360°:</strong> Para maniobras de estacionamiento</li>
+        <li><strong>Telemetría Integrada:</strong> Sistema de registro de datos de conducción</li>
+      </ul>
+
+      <h2 id="proceso-fabricacion">8. Proceso de Fabricación y Personalización</h2>
+
+      <h3>8.1. Producción en el Lamborghini Polo Industriale</h3>
+      
+      <p>
+        Las 29 unidades del Fenomeno se fabrican en una línea de producción dedicada dentro de las instalaciones de Sant'Agata Bolognese:
+      </p>
+
+      <ul>
+        <li><strong>Tiempo de Producción:</strong> 18 semanas por unidad</li>
+        <li><strong>Equipo por Unidad:</strong> 15 técnicos especializados</li>
+        <li><strong>Control de Calidad:</strong> 237 puntos de verificación individuales</li>
+        <li><strong>Pruebas en Pista:</strong> Cada unidad realiza 350 km de pruebas en el Autodromo di Modena</li>
+      </ul>
+
+      <h3>8.2. Programa Ad Personam: La Personalización Definitiva</h3>
+
+      <p>
+        El programa Ad Personam para el Fenomeno ofrece niveles de personalización sin precedentes:
+      </p>
+
+      <h4>Opciones de Exterior</h4>
+      <ul>
+        <li><strong>Colores:</strong> 32 colores estándar + colores a medida sin limitación</li>
+        <li><strong>Acorazados:</strong> 15 combinaciones diferentes de acabados en fibra de carbono</li>
+        <li><strong>Ruedas:</strong> 8 diseños diferentes con múltiples acabados</li>
+        <li><strong>Frenos:</strong> 6 colores para los calipers</li>
+      </ul>
+
+      <h4>Opciones de Interior</h4>
+      <ul>
+        <li><strong>Tapicería:</strong> Cuero, Alcantara®, o combinaciones personalizadas</li>
+        <li><strong>Costuras:</strong> 22 colores diferentes con 5 patrones de costura</li>
+        <li><strong>Placas de Identificación:</strong> Numeración individual y mensajes personalizados</li>
+        <li><strong>Acabados Especiales:</strong> Oro, platino, o materiales exóticos bajo pedido</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/produccion-fenomeno-mobile.jpg" />
+        <img src="../assets/produccion-fenomeno.jpg" alt="Proceso de fabricación artesanal del Lamborghini Fenomeno en las instalaciones de Sant'Agata Bolognese" />
+      </picture>
+
+      <blockquote>
+        "Cada Fenomeno es esencialmente un automóvil único. A través del programa Ad Personam, ofrecemos a nuestros clientes la posibilidad de crear su Lamborghini perfecto, reflejando su personalidad y gusto individual. Desde elecciones de color que requieren desarrollo específico hasta materiales exóticos aprobados especialmente, no hay límites para la personalización." - Andrea Baldi, Jefe del Programa Ad Personam
+      </blockquote>
+
+      <h2 id="contexto-mercado">9. Contexto de Mercado y Exclusividad</h2>
+
+      <h3>9.1. Posicionamiento en el Mercado de Hypercars</h3>
+      
+      <p>
+        El Fenomeno se posiciona en el segmento más exclusivo del mercado de hypercars, compitiendo directamente con:
+      </p>
+
+      <ul>
+        <li><strong>Ferrari Daytona SP3:</strong> 599 unidades, V12 atmosférico, 2.9M€</li>
+        <li><strong>McLaren Solus GT:</strong> 25 unidades, V10 atmosférico, 3.5M€</li>
+        <li><strong>Aston Martin Valkyrie:</strong> 150 unidades, V12 híbrido, 2.8M€</li>
+        <li><strong>Bugatti Chiron Super Sport 300+:</strong> 30 unidades, W16 quad-turbo, 3.8M€</li>
+      </ul>
+
+      <h3>9.2. Perfil del Comprador y Proceso de Adquisición</h3>
+
+      <p>
+        La adquisición de un Fenomeno sigue un proceso exclusivo:
+      </p>
+
+      <ul>
+        <li><strong>Selección por Invitación:</strong> Lamborghini contacta directamente a clientes seleccionados</li>
+        <li><strong>Requisitos:</strong> Historial de propiedad de Lamborghinis anteriores, especialmente modelos limitados</li>
+        <li><strong>Proceso de Configuración:</strong> Sesiones personalizadas en el Centro Stile de Lamborghini</li>
+        <li><strong>Entrega:</strong> Ceremonia especial en Sant'Agata Bolognese con tour de fábrica exclusivo</li>
+        <li><strong>Programa de Propiedad:</strong> Incluye eventos exclusivos y track days privados</li>
+      </ul>
+
+      <h3>9.3. Inversión y Valorización</h3>
+
+      <p>
+        Los modelos 'few-off' de Lamborghini han demostrado ser excelentes inversiones:
+      </p>
+
+      <ul>
+        <li><strong>Precio de Compra:</strong> Estimado en 3.2-3.5 millones de euros (antes de personalización)</li>
+        <li><strong>Valorización Esperada:</strong> Históricamente, modelos similares han apreciado 50-100% en 3-5 años</li>
+        <li><strong>Factores de Valorización:</strong> Extremada rareza, tecnología innovadora, procedencia Lamborghini</li>
+        <li><strong>Mercado Secundario:</strong> Transacciones privadas entre coleccionistas, raramente en subasta pública</li>
+      </ul>
+
+      <h2 id="legado-lamborghini">10. Legado Lamborghini y Posicionamiento</h2>
+
+      <h3>10.1. Línea de Tiempo de Modelos Limited Edition</h3>
+      
+      <p>
+        El Fenomeno se inscribe en una prestigiosa tradición de modelos exclusivos de Lamborghini:
+      </p>
+
+      <ul>
+        <li><strong>1974 Lamborghini Countach LP400 Periscopio:</strong> El original que definió el superdeportivo</li>
+        <li><strong>1986 Lamborghini LM002:</strong> El primer SUV de lujo de altísimo rendimiento</li>
+        <li><strong>2007 Lamborghini Reventón:</strong> 20 unidades, primer 'few-off' moderno</li>
+        <li><strong>2011 Lamborghini Sesto Elemento:</strong> 20 unidades, revolución en uso de materiales compuestos</li>
+        <li><strong>2013 Lamborghini Veneno:</strong> 9 unidades, celebración del 50 aniversario</li>
+        <li><strong>2016 Lamborghini Centenario:</strong> 40 unidades, homenaje a Ferruccio Lamborghini</li>
+        <li><strong>2020 Lamborghini Sián FKP 37:</strong> 63 unidades, primer híbrido de la marca</li>
+      </ul>
+
+      <h3>10.2. Significado Estratégico del Fenomeno</h3>
+
+      <p>
+        El Fenomeno cumple múltiples roles estratégicos para Lamborghini:
+      </p>
+
+      <ul>
+        <li><strong>Demostrador Tecnológico:</strong> Presenta tecnologías que filtrarán a modelos de producción futuros</li>
+        <li><strong>Refuerzo de Imagen:</strong> Consolida a Lamborghini como líder en innovación y exclusividad</li>
+        <li><strong>Atracción de Talento:</strong> Atrae a los mejores ingenieros y diseñadores del mundo</li>
+        <li><strong>Relaciones con Clientes:</strong> Fortalece la relación con los coleccionistas más importantes</li>
+        <li><strong>Sostenibilidad Financiera:</strong> Los márgenes de estos modelos financian desarrollo futuro</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/legado-lamborghini-mobile.jpg" />
+        <img src="../assets/legado-lamborghini.jpg" alt="Línea de tiempo visual mostrando la evolución de los modelos limited edition de Lamborghini desde el Countach hasta el Fenomeno" />
+      </picture>
+
+      <h2 id="futuro-marca">11. El Futuro de Lamborghini: Más Allá del Fenomeno</h2>
+
+      <h3>11.1. Dirección de la Marca Post-Fenomeno</h3>
+      
+      <p>
+        El Fenomeno sienta las bases para el futuro de Lamborghini en varias áreas clave:
+      </p>
+
+      <h4>Electrificación</h4>
+      <ul>
+        <li><strong>Lanzamiento del Lanzador:</strong> Primer Lamborghini totalmente eléctrico para 2028</li>
+        <li><strong>Híbridos de Serie:</strong> Todos los modelos de producción serán híbridos para 2024</li>
+        <li><strong>Tecnología de Baterías:</strong> Desarrollo de supercondensadores y baterías de estado sólido</li>
+      </ul>
+
+      <h4>Sostenibilidad</h4>
+      <ul>
+        <li><strong>Carbon Neutrality:</strong> Compromiso de ser carbono neutral para 2030</li>
+        <li><strong>Materiales Sostenibles:</strong> Incremento en uso de materiales reciclados y renovables</li>
+        <li><strong>Producción Verde:</strong> Fábrica de Sant'Agata certificada carbono neutral desde 2015</li>
+      </ul>
+
+      <h3>11.2. Innovaciones en Desarrollo</h3>
+
+      <p>
+        Tecnologías probadas en el Fenomeno que veremos en futuros modelos:
+      </p>
+
+      <ul>
+        <li><strong>Sistema 6D:</strong> Filtrado a futuras generaciones de Aventador y Huracán</li>
+        <li><strong>Aerodinámica Activa:</strong> Sistemas más avanzados en modelos de producción</li>
+        <li><strong>Materiales Compuestos:</strong> Nuevos procesos de fabricación más eficientes</li>
+        <li><strong>Interfaces de Conducción:</strong> Evolución de la filosofía "Feel like a pilot"</li>
+      </ul>
+
+      <h2 id="conclusion">12. Conclusión: La Definición de Few-Off</h2>
+
+      <p>
+        El Lamborghini Fenomeno representa mucho más que otro automóvil de edición limitada; es la materialización de una filosofía que combina arte, ciencia y emoción en un objeto de deseo mecánico. Con solo 29 unidades destinadas a los coleccionistas más selectos del mundo, el Fenomeno no solo establece nuevos estándares técnicos con su sistema híbrido V12 de 1.080 CV, sino que redefine el concepto mismo de lo que significa poseer un Lamborghini.
+      </p>
+
+      <p>
+        Desde su diseño "hiperelegante y esencial" que marca el rumbo estético futuro de la marca, hasta su arquitectura técnica que incorpora lecciones aprendidas en las pistas de competición más exigentes del mundo, el Fenomeno encapsula seis décadas de evolución Lamborghini mientras apunta decididamente hacia el futuro. Su combinación de un V12 atmosférico que celebra la tradición con sistemas eléctricos que abrazan la innovación crea una experiencia de conducción que es simultáneamente brutal y sofisticada, primitiva y avanzada.
+      </p>
+
+      <p>
+        El Fenomeno no es simplemente el Lamborghini más rápido, potente o exclusivo jamás creado; es la expresión más pura de una filosofía que cree que los límites existen solo para ser superados. En un mundo que avanza inexorablemente hacia la electrificación y la autonomía, el Fenomeno sirve como recordatorio del poder transformador de la emoción pura en el automovilismo, demostrando que el futuro del rendimiento extremo puede ser tanto sostenible como profundamente emocionante.
+      </p>
+
+      <p>
+        Como testimonio del ingenio humano y la búsqueda incansable de la perfección, el Lamborghini Fenomeno se erige no solo como un logro técnico monumental, sino como una obra de arte en movimiento que trascenderá su tiempo para convertirse en leyenda automotriz.
+      </p>
+
+      <div class="fuentes-seccion">
+        <h4>Fuentes y Bibliografía Completa:</h4>
+        <ul>
+          <li>
+            <a
+              href="https://www.lamborghini.com/es-en/noticias/the-few-off-lamborghini-fenomeno"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Lamborghini.com (2025). The ‘Few Off’ Lamborghini Fenomeno.</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- TAREA 6: Paginación -->
+      <div class="pagination-nav">
+        <a href="article4.html" class="btn btn-prev"
+          >&larr; Artículo anterior</a
+        >
+        <a href="article1.html" class="btn btn-next"
+          >Artículo siguiente &rarr;</a
+        >
+      </div>
+    </article>
+  </div>
+</main>
+
+    <!-- TAREA 3: Footer Corregido (Rutas relativas ../) -->
     <footer class="footer-principal" id="contacto">
       <div class="container">
-        <a href="#" class="logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              d="M8 3H16C17.1046 3 18 3.89543 18 5V14H6V5C6 3.89543 6.89543 3 8 3ZM19 16V18C19 18.5523 18.5523 19 18 19H17V21H15V19H9V21H7V19H6C5.44772 19 5 18.5523 5 18V16H19Z"
-            ></path>
-          </svg>
+        <a href="../index.html" class="logo">
+          <img src="../assets/car-sport-outline.svg" alt="" />
           Cocheando
         </a>
+
+        <!-- Mapa del Sitio -->
+        <div class="footer-mapa-sitio">
+          <h4>Mapa del Sitio</h4>
+          <ul class="footer-enlaces-mapa">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../about.html">Sobre mí</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+            <li><a href="article1.html">Artículos</a></li>
+          </ul>
+        </div>
+
         <ul class="footer-enlaces">
-          <li><a href="#">Política de Privacidad</a></li>
-          <li><a href="#">Términos de Uso</a></li>
-          <li><a href="#">Contacto: info@motorpasion.blog</a></li>
+          <li>
+            <a href="../contacto.html">Contacto: info@motorpasion.blog</a>
+          </li>
+          <li>
+            <a href="#" class="btn-volver-arriba">Volver arriba &uarr;</a>
+          </li>
         </ul>
         <p class="footer-copyright">
           &copy; 2025 Cocheando. Todos los derechos reservados.

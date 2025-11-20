@@ -29,27 +29,17 @@
   <body>
     <header class="header-principal">
       <div class="container">
-        <a href="#" class="logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              d="M8 3H16C17.1046 3 18 3.89543 18 5V14H6V5C6 3.89543 6.89543 3 8 3ZM19 16V18C19 18.5523 18.5523 19 18 19H17V21H15V19H9V21H7V19H6C5.44772 19 5 18.5523 5 18V16H19Z"
-            ></path>
-          </svg>
+        <a href="index.html" class="logo">
+          <img src="./assets/car-sport-outline.svg" alt="" />
           Cocheando
         </a>
 
         <nav class="nav-menu">
           <ul>
-            <li><a href="#" class="active">Inicio</a></li>
-            <li><a href="#articulos">Artículos</a></li>
-            <li>
-              <a href="#perfil">Sobre Mí</a>
-            </li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="src/article1.html">Artículos</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </div>
@@ -69,11 +59,9 @@
         </div>
       </section>
       <div class="container container-principal">
-        <!-- seccion de los articulos -->
         <section class="seccion-articulos" id="articulos">
           <h2>Últimos Artículos</h2>
 
-          <!-- articulos -->
           <div class="articulos-grid">
             <article class="card-articulo">
               <div class="card-imagen-container">
@@ -86,7 +74,8 @@
               </div>
               <div class="card-contenido">
                 <span class="card-meta"
-                  >15 de Oct, 2025 · en <a href="#">Innovación</a></span
+                  >15 de Oct, 2025 · en
+                  <a href="src/article1.html">Innovación</a></span
                 >
                 <h3>
                   El Futuro es Eléctrico: ¿Están los V8 en Peligro de Extinción?
@@ -115,7 +104,8 @@
               </div>
               <div class="card-contenido">
                 <span class="card-meta"
-                  >12 de Oct, 2025 · en <a href="#">Clásicos</a></span
+                  >12 de Oct, 2025 · en
+                  <a href="src/article2.html">Clásicos</a></span
                 >
                 <h3>
                   Joyas Ocultas: 5 Autos Clásicos de los 80 que Deberías Conocer
@@ -144,7 +134,8 @@
               </div>
               <div class="card-contenido">
                 <span class="card-meta"
-                  >10 de Oct, 2025 · en <a href="#">Tuning</a></span
+                  >10 de Oct, 2025 · en
+                  <a href="src/article3.html">Tuning</a></span
                 >
                 <h3>
                   Tuning 101: Cómo Empezar a Modificar tu Auto sin Romperlo
@@ -171,7 +162,8 @@
               </div>
               <div class="card-contenido">
                 <span class="card-meta"
-                  >8 de Oct, 2025 · en <a href="#">Deportivos</a></span
+                  >8 de Oct, 2025 · en
+                  <a href="src/article4.html">Deportivos</a></span
                 >
                 <h3>La Aerodinámica en F1: El Secreto de la Velocidad Pura</h3>
                 <p class="card-extracto">
@@ -196,7 +188,8 @@
               </div>
               <div class="card-contenido">
                 <span class="card-meta"
-                  >5 de Oct, 2025 · en <a href="#">Innovación</a></span
+                  >5 de Oct, 2025 · en
+                  <a href="src/article5.html">Innovación</a></span
                 >
                 <h3>
                   Análisis: El Nuevo Hypercar Híbrido que Desafía la Física
@@ -220,7 +213,7 @@
             <h3 class="widget-titulo">Sobre el Autor</h3>
             <img
               src="assets/imagen-uri.jpeg"
-              alt="Foto de perfil de Alex Rivas, autor del blog"
+              alt="Foto de perfil de Uriel Garmendia, autor del blog"
               class="perfil-foto"
             />
             <h4>Uriel Garmendia</h4>
@@ -233,20 +226,21 @@
             >
           </div>
 
+          <!-- TAREA 4: Categorías Corregidas -->
           <div class="widget widget-categorias">
             <h3 class="widget-titulo">Categorías</h3>
             <ul>
               <li>
-                <a href="#">Innovación <span>(5)</span></a>
+                <a href="src/article1.html">Innovación <span>(5)</span></a>
               </li>
               <li>
-                <a href="#">Clásicos <span>(3)</span></a>
+                <a href="src/article2.html">Clásicos <span>(3)</span></a>
               </li>
               <li>
-                <a href="#">Deportivos <span>(8)</span></a>
+                <a href="src/article4.html">Deportivos <span>(8)</span></a>
               </li>
               <li>
-                <a href="#">Tuning <span>(4)</span></a>
+                <a href="src/article3.html">Tuning <span>(4)</span></a>
               </li>
             </ul>
           </div>
@@ -256,9 +250,9 @@
               Recibe las últimas noticias del mundo motor directamente en tu
               email.
             </p>
-            <form class="form-suscripcion">
+            <form class="form-suscripcion" action="recibido.html">
               <input type="email" placeholder="tu.email@ejemplo.com" required />
-              <button typea="submit" class="btn btn-block">Suscribirse</button>
+              <button type="submit" class="btn btn-block">Suscribirse</button>
             </form>
           </div>
 
@@ -292,25 +286,33 @@
       </div>
     </main>
 
-    <!-- footer -->
+    <!-- TAREA 3: Footer Corregido -->
     <footer class="footer-principal" id="contacto">
       <div class="container">
-        <a href="#" class="logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              d="M8 3H16C17.1046 3 18 3.89543 18 5V14H6V5C6 3.89543 6.89543 3 8 3ZM19 16V18C19 18.5523 18.5523 19 18 19H17V21H15V19H9V21H7V19H6C5.44772 19 5 18.5523 5 18V16H19Z"
-            ></path>
-          </svg>
+        <a href="index.html" class="logo">
+          <img
+            src="./assets/car-sport-outline.svg"
+            style="color: red"
+            alt="logo"
+          />
           Cocheando
         </a>
+
+        <div class="footer-mapa-sitio">
+          <h4>Mapa de la web</h4>
+          <ul class="footer-enlaces-mapa">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="src/article1.html">Artículos</a></li>
+          </ul>
+        </div>
+
         <ul class="footer-enlaces">
-          <li><a href="#">Política de Privacidad</a></li>
-          <li><a href="#">Términos de Uso</a></li>
-          <li><a href="#">Contacto: info@motorpasion.blog</a></li>
+          <li><a href="contacto.html">Contacto: info@motorpasion.blog</a></li>
+          <li>
+            <a href="#" class="btn-volver-arriba">Volver arriba &uarr;</a>
+          </li>
         </ul>
         <p class="footer-copyright">
           &copy; 2025 Cocheando. Todos los derechos reservados.

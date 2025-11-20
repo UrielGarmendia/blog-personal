@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Contacto - Cocheando</title>
+    <meta
+      name="description"
+      content="Envíanos tus dudas o sugerencias sobre el mundo motor."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-principal">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="./assets/car-sport-outline.svg" alt="" />
+          Cocheando
+        </a>
+
+        <!-- TAREA 1: Navegación Corregida (Rutas de raíz) -->
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="src/article1.html">Artículos</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-content">
+      <!-- TAREA 2: Formulario de Contacto -->
+      <form action="recibido.html" method="GET" class="contact-form">
+        <h1 style="text-align: center; margin-bottom: 2rem">Contacto</h1>
+        <p
+          style="
+            text-align: center;
+            color: var(--color-texto-secundario);
+            margin-bottom: 2.5rem;
+          "
+        >
+          ¿Tenés alguna sugerencia, duda o propuesta? ¡Escribime!
+        </p>
+
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            class="form-control"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-block">Enviar Mensaje</button>
+      </form>
+    </main>
+
+    <!-- TAREA 3: Footer Corregido -->
+    <footer class="footer-principal">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="./assets/car-sport-outline.svg" alt="" />
+          Cocheando
+        </a>
+
+        <!-- Mapa del Sitio -->
+        <div class="footer-mapa-sitio">
+          <h4>Mapa del Sitio</h4>
+          <ul class="footer-enlaces-mapa">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="src/article1.html">Artículos</a></li>
+          </ul>
+        </div>
+
+        <ul class="footer-enlaces">
+          <li><a href="contacto.html">Contacto: info@motorpasion.blog</a></li>
+          <!-- Botón Volver Arriba -->
+          <li>
+            <a href="#" class="btn-volver-arriba">Volver arriba &uarr;</a>
+          </li>
+        </ul>
+        <p class="footer-copyright">
+          &copy; 2025 Cocheando. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

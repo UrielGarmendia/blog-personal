@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- La ruta al CSS es directa porque este archivo está en la raíz -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Sobre Mí - Cocheando</title>
+    <meta
+      name="description"
+      content="Conoce a Uriel Garmendia, el autor del blog Cocheando."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-principal">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="./assets/car-sport-outline.svg" alt="" />
+          Cocheando
+        </a>
+
+        <!-- TAREA 1: Navegación Corregida (Rutas de raíz) -->
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="src/article1.html">Artículos</a></li>
+            <li><a href="about.html" class="active">Sobre mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-content">
+      <!-- Contenido de la página "Sobre Mí" -->
+      <!-- He reutilizado el widget de autor del index para darle contenido -->
+      <div
+        class="widget perfil-autor"
+        style="max-width: 700px; margin: 2rem auto; text-align: left"
+      >
+        <h1 class="widget-titulo" style="font-size: 2.5rem; border: none">
+          Sobre el Autor
+        </h1>
+        <img
+          src="assets/imagen-uri.jpeg"
+          alt="Foto de perfil de Uriel Garmendia"
+          class="perfil-foto"
+          style="width: 150px; height: 150px; margin-bottom: 1.5rem"
+        />
+        <h4>Uriel Garmendia</h4>
+        <p style="margin-bottom: 2rem">
+          Fan del motor y estudiante de sistemas en UADE
+        </p>
+        <p
+          style="
+            color: var(--color-texto-principal);
+            font-size: 1.1rem;
+            line-height: 1.7;
+          "
+        >
+          ¡Hola! Soy Uriel Garmendia, el creador de "Cocheando". Este blog nació
+          de dos pasiones: la tecnología y el increíble mundo de los
+          automóviles. Como estudiante de sistemas en UADE, me fascina cómo la
+          ingeniería de software y la innovación están transformando la
+          industria automotriz, desde los hypercars híbridos hasta la eficiencia
+          de los nuevos eléctricos.
+        </p>
+        <br />
+        <p
+          style="
+            color: var(--color-texto-principal);
+            font-size: 1.1rem;
+            line-height: 1.7;
+          "
+        >
+          Aquí encontrarás análisis sobre la última tecnología en F1, guías de
+          tuning para entusiastas y un vistazo nostálgico a esos clásicos de los
+          80 y 90 que definieron épocas. Mi objetivo es compartir esta pasión y
+          explorar juntos el asfalto.
+        </p>
+        <br />
+        <a
+          href="https://identikit-urielgarmendia.netlify.app/"
+          class="btn-leer-mas"
+          target="_blank"
+          >Ver mi Portfolio &rarr;</a
+        >
+      </div>
+    </main>
+
+    <!-- TAREA 3: Footer Corregido -->
+    <footer class="footer-principal">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="./assets/car-sport-outline.svg" alt="" />
+          Cocheando
+        </a>
+
+        <!-- Mapa del Sitio -->
+        <div class="footer-mapa-sitio">
+          <h4>Mapa del Sitio</h4>
+          <ul class="footer-enlaces-mapa">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="src/article1.html">Artículos</a></li>
+          </ul>
+        </div>
+
+        <ul class="footer-enlaces">
+          <li><a href="contacto.html">Contacto: info@motorpasion.blog</a></li>
+          <!-- Botón Volver Arriba -->
+          <li>
+            <a href="#" class="btn-volver-arriba">Volver arriba &uarr;</a>
+          </li>
+        </ul>
+        <p class="footer-copyright">
+          &copy; 2025 Cocheando. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

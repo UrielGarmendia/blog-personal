@@ -28,162 +28,587 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="../estilos.css" />
   </head>
   <body>
     <header class="header-principal">
       <div class="container">
         <a href="../index.html" class="logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4ZM12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14ZM8.8285 8.8285C9.40935 8.24765 10.1805 7.87878 11 7.7323V6.05051C9.07374 6.34149 7.42211 7.6012 6.34149 9.36981L7.7323 10.1213C8.12122 9.81945 8.5208 9.53051 8.8285 9.17147V8.8285ZM6.05051 13H7.7323C7.87878 13.8195 8.24765 14.5907 8.8285 15.1715L9.17147 14.8285C9.53051 15.4792 9.81945 15.8788 10.1213 16.2677L9.36981 17.6585C7.6012 16.5779 6.34149 14.9263 6.05051 13ZM13 17.9495V16.2677C13.8195 16.1212 14.5907 15.7524 15.1715 15.1715L14.8285 14.8285C15.4792 14.4695 15.8788 14.1805 16.2677 13.8787L17.6585 14.6302C16.5779 16.3988 14.9263 17.6585 13 17.9495ZM17.9495 11H16.2677C16.1212 10.1805 15.7524 9.40935 15.1715 8.8285L14.8285 9.17147C14.4695 8.5208 14.1805 8.12122 13.8787 7.7323L14.6302 6.34149C16.3988 7.42211 17.6585 9.07374 17.9495 11Z"
-            ></path>
-          </svg>
+          <img src="../assets/car-sport-outline.svg" alt="" />
           Cocheando
         </a>
 
+        <!-- TAREA 1: Navegación Corregida (Rutas relativas ../) -->
         <nav class="nav-menu">
           <ul>
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./article1.html">Nuevo</a></li>
-            <li><a href="./article2.html">Clásicos</a></li>
-            <li><a href="./article3.html">Tuning</a></li>
-            <li><a href="./article4.html">Deportivos</a></li>
-            <li><a href="./article5.html">Innovación</a></li>
+            <li><a href="article1.html" class="active">Artículos</a></li>
+            <li><a href="../about.html">Sobre mí</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
-      <div class="container">
-        <nav class="breadcrumb">
-          <a href="../index.html">Inicio</a> › <a href="#">Innovación</a> ›
-          <span>El Avance Imparable de los Eléctricos...</span>
-        </nav>
+<main>
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="../index.html">Inicio</a> ›
+      <a href="article1.html">Innovación</a> ›
+      <span>El Avance Imparable de los Eléctricos...</span>
+    </nav>
 
-        <a href="../index.html" class="btn-volver">← Volver al blog</a>
+    <a href="../index.html" class="btn-volver">← Volver al blog</a>
 
-        <article class="articulo-contenido">
-          <span class="articulo-meta"
-            >Innovación · 30 Oct, 2025
-            <b class="tiempo-lectura">· 4 min de lectura</b></span
-          >
-          <h1>
-            El Avance Imparable de los Eléctricos: Países que Lideran el Mercado
-          </h1>
+    <article class="articulo-contenido">
+      <span class="articulo-meta"
+        >Innovación · 30 Oct, 2025
+        <b class="tiempo-lectura">· 25 min de lectura</b></span
+      >
+      <h1>
+        El Avance Imparable de los Eléctricos: Revolución Global en la Movilidad Sostenible
+      </h1>
 
-          <img
-            src="../assets/auto-electrico-moderno.jpg"
-            class="articulo-imagen-destacada"
-            alt="Múltiples autos eléctricos cargando en una moderna estación de servicio."
-          />
-
-          <p>
-            La transición hacia la movilidad eléctrica está ocurriendo a un
-            ritmo vertiginoso. Aunque la adopción global varía, ciertos países
-            se han posicionado como líderes indiscutibles, demostrando que un
-            futuro sin combustibles fósiles en el transporte es posible.
-          </p>
-
-          <h2>Los Gigantes de la Electrificación</h2>
-          <p>
-            El mercado de vehículos eléctricos (EV) no está creciendo de manera
-            uniforme. Dos regiones principales dominan el panorama: China y
-            Europa.
-          </p>
-
-          <h3>China: El Mercado Más Grande</h3>
-          <p>
-            China no solo es el mayor fabricante de autos eléctricos del mundo,
-            sino también el mayor mercado. Gracias a fuertes subsidios
-            gubernamentales (aunque ahora en reducción), una amplia
-            infraestructura de carga y la presencia de gigantes locales, el país
-            asiático domina las cifras de ventas globales. Ciudades como
-            Shenzhen han electrificado casi por completo su flota de transporte
-            público.
-          </p>
-
-          <h3>Noruega: El Caso de Éxito Europeo</h3>
-          <p>
-            Si hablamos de penetración de mercado, Noruega es el ejemplo a
-            seguir. Este país escandinavo ha logrado que la gran mayoría de sus
-            ventas de autos nuevos sean eléctricos puros (BEV) o híbridos
-            enchufables (PHEV). ¿El secreto? Fuertes incentivos fiscales, como
-            la exención de impuestos de compra e IVA, combinados con beneficios
-            prácticos como peajes y estacionamientos gratuitos.
-          </p>
-
-          <blockquote>
-            El objetivo de Noruega es claro: prohibir la venta de autos nuevos a
-            combustión para 2025, una meta que parece totalmente alcanzable.
-          </blockquote>
-
-          <h2>Factores Clave del Crecimiento</h2>
-          <p>
-            Este avance no es casualidad. Se sustenta en tres pilares
-            principales:
-          </p>
-          <ul>
-            <li>
-              <strong>Incentivos Gubernamentales:</strong> Subsidios directos,
-              exenciones de impuestos y beneficios de circulación son cruciales
-              para reducir la barrera del precio inicial.
-            </li>
-            <li>
-              <strong>Infraestructura de Carga:</strong> La confianza del
-              consumidor depende directamente de la disponibilidad de puntos de
-              carga, tanto públicos como privados.
-            </li>
-            <li>
-              <strong>Conciencia Ambiental:</strong> Una creciente preocupación
-              por la calidad del aire urbano y el cambio climático impulsa a los
-              consumidores a buscar alternativas más limpias.
-            </li>
-          </ul>
-
-          <div class="fuentes-seccion">
-            <h4>Fuentes:</h4>
-            <ul>
-              <li>
-                <a
-                  href="https://www.ambito.com/autos/avance-imparable-los-electricos-cuales-son-los-paises-que-lideran-el-mercado-n6204487"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Ámbito (2025). El avance imparable de los eléctricos: cuáles
-                  son los países que lideran el mercado.</a
-                >
-              </li>
-            </ul>
-          </div>
-        </article>
+      <div class="articulo-intro">
+        <p><strong>Resumen ejecutivo:</strong> La transición hacia la movilidad eléctrica representa la transformación más significativa en el transporte desde la invención del motor de combustión interna. Este análisis exhaustivo examina los patrones globales de adopción, los factores tecnológicos, económicos y políticos que impulsan esta revolución, y las implicaciones geopolíticas de un mundo que abandona progresivamente los combustibles fósiles.</p>
       </div>
-    </main>
 
-    <!-- footer -->
+      <picture class="articulo-imagen-destacada">
+        <source media="(max-width: 600px)" srcset="../assets/auto-electrico-moderno-mobile.jpg" />
+        <img
+          src="../assets/auto-electrico-moderno.jpg"
+          alt="Panorámica de múltiples vehículos eléctricos de diferentes marcas cargando simultáneamente en una estación de servicio futurista"
+        />
+      </picture>
+
+      <div class="indice-contenido">
+        <h3>Índice de Contenidos</h3>
+        <ol style="padding: 1rem;">
+          <li><a href="#panorama-global">El Panorama Global Actual</a></li>
+          <li><a href="#lideres-mundiales">Los Líderes Mundiales en Electrificación</a></li>
+          <li><a href="#tecnologia-baterias">Revolución Tecnológica en Baterías</a></li>
+          <li><a href="#infraestructura-carga">Despliegue de Infraestructura de Carga</a></li>
+          <li><a href="#politicas-publicas">Políticas Públicas e Incentivos</a></li>
+          <li><a href="#impacto-ambiental">Impacto Ambiental y Sostenibilidad</a></li>
+          <li><a href="#cadena-suministro">Cadena de Suministro y Geopolítica</a></li>
+          <li><a href="#futuro-tendencias">Futuro y Tendencias Emergentes</a></li>
+          <li><a href="#conclusion">Conclusión Integral</a></li>
+        </ol>
+      </div>
+
+      <h2 id="panorama-global">1. El Panorama Global Actual: Estadísticas y Tendencias</h2>
+      
+      <p>
+        La transición hacia la movilidad eléctrica está ocurriendo a un ritmo que supera sistemáticamente las proyecciones más optimistas de los analistas. Según datos consolidados de la Agencia Internacional de Energía (IEA), las ventas globales de vehículos eléctricos han experimentado un <strong>crecimiento promedio del 35% interanual durante los últimos cinco años</strong>, alcanzando hitos históricos que hace apenas una década parecían pertenecer al ámbito de la ciencia ficción. En 2025, se proyecta que más de 18 millones de vehículos eléctricos circularán por las carreteras del mundo, representando aproximadamente el 18% de todas las ventas de automóviles nuevos a nivel global.
+      </p>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/estadisticas-globales-mobile.jpg" />
+        <img src="../assets/estadisticas-globales.jpg" alt="Infografía detallada mostrando el crecimiento exponencial de vehículos eléctricos por región entre 2015 y 2025" />
+      </picture>
+
+      <h3>1.1. Análisis Regional Comparativo</h3>
+      
+      <p>
+        La adopción global muestra patrones marcadamente diferentes entre regiones, reflejando realidades económicas, políticas energéticas y contextos culturales diversos:
+      </p>
+
+      <h4>Asia-Pacífico: El Coloso Chino y Sus Vecinos</h4>
+      <p>
+        China continúa su dominio absoluto, representando el <strong>55% de todas las ventas globales de VE</strong> en 2024. Sin embargo, el panorama asiático se está diversificando rápidamente. Corea del Sur ha emergido como un actor significativo, con una tasa de adopción que supera el 15% de las ventas de vehículos nuevos, mientras que Japón mantiene un crecimiento constante aunque más moderado, enfocado particularmente en vehículos híbridos y de pila de combustible de hidrógeno.
+      </p>
+
+      <h4>Europa: El Continente Verde</h4>
+      <p>
+        La Unión Europea en su conjunto ha alcanzado una <strong>penetración de mercado del 22% en ventas de vehículos nuevos</strong>, con países nórdicos liderando la transición. Más allá de Noruega, Islandia (79%), Suecia (47%) y los Países Bajos (43%) muestran tasas de adopción excepcionales. Los mandatos regulatorios de la UE, que establecen la prohibición de venta de vehículos de combustión para 2035, han creado un marco de certidumbre que acelera las inversiones.
+      </p>
+
+      <h4>América del Norte: Divergencia Transfronteriza</h4>
+      <p>
+        Estados Unidos mantiene un crecimiento sólido (8.5% de penetración en 2024), impulsado por las políticas de la administración federal y el liderazgo tecnológico de Tesla y otros fabricantes tradicionales. Canadá muestra un desempeño superior (12.3%), mientras que México avanza más lentamente (3.2%), reflejando diferencias en incentivos fiscales y desarrollo de infraestructura.
+      </p>
+
+      <h4>América Latina: El Caso Excepcional Uruguayo y Otros Mercados Emergentes</h4>
+      <p>
+        Uruguay ha sorprendido al mundo con una <strong>tasa de adopción del 26% en vehículos livianos</strong>, superando a economías mucho más grandes. Este éxito se basa en una combinación única de exenciones fiscales agresivas, una matriz eléctrica 98% renovable, y políticas de estado consistentes durante más de una década. Brasil y Chile muestran avances significativos, aunque desde bases más bajas, mientras que Argentina y Colombia enfrentan mayores desafíos macroeconómicos.
+      </p>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/mapa-adopcion-global-mobile.jpg" />
+        <img src="../assets/mapa-adopcion-global.jpg" alt="Mapa mundial interactivo mostrando tasas de adopción de vehículos eléctricos por país con código de colores" />
+      </picture>
+
+      <h2 id="lideres-mundiales">2. Los Líderes Mundiales en Electrificación: Análisis de Casos de Estudio</h2>
+
+      <h3>2.1. China: La Estrategia de Dominio Global</h3>
+      
+      <p>
+        El éxito chino no es accidental, sino el resultado de una <strong>estrategia nacional integral iniciada en 2001</strong> con el plan "863" para vehículos de energía nueva. Esta estrategia ha evolucionado a través de múltiples planes quinquenales, combinando:
+      </p>
+
+      <ul>
+        <li><strong>Subsidios directos a consumidores:</strong> Inicialmente representaban hasta el 40% del precio del vehículo, ahora en fase de reducción progresiva</li>
+        <li><strong>Inversión masiva en I+D:</strong> Más de $58 mil millones invertidos entre 2009-2023</li>
+        <li><strong>Protección del mercado interno:</strong> Restricciones a importaciones y requerimientos de joint-ventures con transferencia tecnológica</li>
+        <li><strong>Despliegue agresivo de infraestructura:</strong> 1.8 millones de cargadores públicos instalados hasta 2024</li>
+        <li><strong>Cuotas obligatorias para fabricantes:</strong> Sistema de créditos NEV que penaliza a quienes no cumplen metas progresivas</li>
+      </ul>
+
+      <p>
+        El hito de 2024, cuando <strong>BYD superó temporalmente a Tesla en ventas globales</strong>, marca un punto de inflexión simbólico. BYD ha construido una ventaja competitiva basada en la integración vertical (desde minas de litio hasta vehículos terminados) y el desarrollo de la innovadora tecnología Blade Battery, que ofrece mayor seguridad y densidad energética.
+      </p>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/byd-factory-mobile.jpg" />
+        <img src="../assets/byd-factory.webp
+        " alt="Vista aérea de la gigafábrica de BYD en Shenzhen, mostrando líneas de producción totalmente automatizadas" />
+      </picture>
+
+      <h3>2.2. Noruega: El Laboratorio Perfecto</h3>
+      
+      <p>
+        Noruega ofrece el caso más avanzado de transición exitosa, con lecciones aplicables globalmente:
+      </p>
+
+      <h4>Ecosistema de Incentivos Integral</h4>
+      <ul>
+        <li><strong>Exención total del IVA (25%)</strong> y impuesto de registro</li>
+        <li>Acceso a carriles bus/EV en áreas congestionadas</li>
+        <li>Estacionamiento gratuito en zonas municipales</li>
+        <li>Exención de peajes en carreteras y túneles</li>
+        <li>Tarifas reducidas en transbordadores</li>
+        <li>Carga gratuita en estaciones públicas (en muchos municipios)</li>
+      </ul>
+
+      <h4>Factores Contextuales Clave</h4>
+      <p>
+        El éxito noruego se explica también por condiciones únicas: matriz eléctrica 98% hidroeléctrica, alta densidad urbana, poder adquisitivo elevado, y una cultura ambientalmente consciente. La <strong>prohibición de venta de vehículos de combustión para 2025</strong> parece alcanzable, con el 87% de las ventas de vehículos nuevos ya siendo eléctricos puros o híbridos enchufables.
+      </p>
+
+      <h3>2.3. Uruguay: El Modelo para Economías Emergentes</h3>
+      
+      <p>
+        Uruguay demuestra que la transición eléctrica es viable fuera de economías desarrolladas. Su estrategia se basa en:
+      </p>
+
+      <ul>
+        <li><strong>Exención del IMESI (impuesto específico interno):</strong> Representa una reducción de 20-30% en el precio final</li>
+        <li><strong>Exención del impuesto de circulación:</strong> Durante los primeros 5 años</li>
+        <li><strong>Tarifas eléctricas preferenciales:</strong> Para carga nocturna residencial</li>
+        <li><strong>Desarrollo de infraestructura nacional:</strong> 500 cargadores públicos desplegados estratégicamente</li>
+        <li><strong>Transformación de la matriz eléctrica:</strong> De dependiente de importaciones a 98% renovable</li>
+      </ul>
+
+      <p>
+        El resultado: <strong>Uruguay tiene la flota de EVs per cápita más grande de América Latina</strong>, con beneficios tangibles en reducción de importaciones de petróleo (ahorro estimado de $450 millones anuales) y mejora de la calidad del aire en Montevideo.
+      </p>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/transporte-uruguayo-mobile.jpg" />
+        <img src="../assets/transporte-uruguayo.jpg" alt="Flota de taxis y buses eléctricos en Montevideo, Uruguay, con la rambla de fondo" />
+      </picture>
+
+      <h2 id="tecnologia-baterias">3. Revolución Tecnológica en Baterías: Más Allá del Litio-ion</h2>
+
+      <h3>3.1. Evolución de la Densidad Energética y Reducción de Costos</h3>
+      
+      <p>
+        La tecnología de baterías ha experimentado mejoras dramáticas en la última década. Según BloombergNEF, el <strong>precio promedio de las baterías de iones de litio ha caído un 89% desde 2010</strong>, de $1,191/kWh a $132/kWh en 2023. Esta reducción ha sido el factor individual más importante en la viabilidad económica de los VE.
+      </p>
+
+      <h3>3.2. Químicas Emergentes y Tecnologías Prometedoras</h3>
+
+      <h4>Baterías de Estado Sólido</h4>
+      <p>
+        Consideradas el "santo grial" de la tecnología de baterías, prometen:
+      </p>
+      <ul>
+        <li><strong>40-50% mayor densidad energética</strong> que las baterías actuales</li>
+        <li>Tiempos de carga reducidos a 10-15 minutos</li>
+        <li>Mayor seguridad (sin riesgo de incendio)</li>
+        <li>Vida útil extendida (más de 2,000 ciclos)</li>
+      </ul>
+      <p>
+        Toyota, QuantumScape y Solid Power lideran esta carrera, con producción comercial esperada para 2027-2028.
+      </li>
+
+      <h4>Baterías de Fosfato de Hierro y Litio (LFP)</h4>
+      <p>
+        Esta química, popularizada por BYD y Tesla, ofrece:
+      </p>
+      <ul>
+        <li>Mayor seguridad y estabilidad térmica</li>
+        <li>Vida útil más larga (3,000-5,000 ciclos)</li>
+        <li>Costos reducidos por la ausencia de cobalto</li>
+        <li>Desempeño mejorado en condiciones de alta temperatura</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/tecnologia-baterias-mobile.jpg" />
+        <img src="../assets/tecnologia-baterias.jpg" alt="Comparación visual de diferentes tecnologías de baterías para vehículos eléctricos mostrando densidades energéticas y estructuras internas" />
+      </picture>
+
+      <h2 id="infraestructura-carga">4. Despliegue de Infraestructura de Carga: Retos y Soluciones</h2>
+
+      <h3>4.1. Tipología de Cargadores y Estándares Globales</h3>
+
+      <p>
+        La infraestructura de carga se ha diversificado para satisfacer diferentes necesidades de usuarios:
+      </p>
+
+      <h4>Carga Lenta (Nivel 1 y 2)</h4>
+      <ul>
+        <li><strong>3-22 kW de potencia</strong></li>
+        <li>Tiempos de carga: 4-12 horas</li>
+        <li>Ideal para residencias, lugares de trabajo y estacionamientos de larga estadía</li>
+        <li>Representa el 85% de todos los puntos de carga instalados</li>
+      </ul>
+
+      <h4>Carga Rápida (DC)</h4>
+      <ul>
+        <li><strong>50-350 kW de potencia</strong></li>
+        <li>Tiempos de carga: 20-40 minutos para 80%</li>
+        <li>Estandarización alrededor del CCS2 en Europa y NACS en América del Norte</li>
+        <li>Esencial para viajes de larga distancia y usuarios sin acceso a carga residencial</li>
+      </ul>
+
+      <h4>Carga Ultrarrápida</h4>
+      <ul>
+        <li><strong>350-900 kW de potencia</strong> (en desarrollo)</li>
+        <li>Tiempos de carga objetivo: 5-10 minutos</li>
+        <li>Requiere upgrades significativos en la red eléctrica</li>
+        <li>Tecnologías de refrigeración avanzada y sistemas de gestión térmica</li>
+      </ul>
+
+      <h3>4.2. El Desafío de la Carga Inmediata</h3>
+
+      <p>
+        Como señalan los análisis de Ámbito, <strong>el gran reclamo del cliente de auto eléctrico sigue siendo la carga inmediata para igualar al combustión</strong>. Los conductores esperan experiencias de recarga que se aproximen a los 5-7 minutos requeridos para llenar un tanque de gasolina. Para abordar este desafío, se están desarrollando múltiples soluciones:
+      </p>
+
+      <ul>
+        <li><strong>Tecnología de carga de 800V:</strong> Implementada por Porsche Taycan, Hyundai Ioniq 5 y Kia EV6</li>
+        <li><strong>Sistemas de batería refrigerada por líquido:</strong> Para gestionar el calor durante carga ultrarrápida</li>
+        <li><strong>Estaciones de batería intercambiable:</strong> Modelo promovido por NIO en China (más de 800 estaciones)</li>
+        <li><strong>Almacenamiento energético en sitio:</strong> Baterías estacionarias que mitigan demanda pico en la red</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/estacion-carga-avanzada-mobile.jpg" />
+        <img src="../assets/estacion-carga-avanzada.jpg" alt="Estación de carga ultrarrápida con múltiples pantallas táctiles y sistema de gestión energética integrado" />
+      </picture>
+
+      <h2 id="politicas-publicas">5. Políticas Públicas e Incentivos: Lecciones de Casos Exitosos</h2>
+
+      <h3>5.1. Taxonomía de Instrumentos de Política</h3>
+
+      <p>
+        Los gobiernos han implementado un repertorio diverso de instrumentos para acelerar la transición:
+      </p>
+
+      <h4>Incentivos Económicos Directos</h4>
+      <ul>
+        <li><strong>Subsidios a la compra:</strong> Reducciones directas de precio (China, Francia, Alemania)</li>
+        <li><strong>Exenciones fiscales:</strong> IVA, impuestos de registro y circulación (Noruega, Uruguay)</li>
+        <li><strong>Tarifas eléctricas preferenciales:</strong> Para carga durante horas valle (Portugal, California)</li>
+      </ul>
+
+      <h4>Instrumentos Regulatorios</h4>
+      <ul>
+        <li><strong>Estándares de emisión:</strong> Sistemas de créditos (ZEV mandate en California, NEV en China)</li>
+        <li><strong>Restricciones de circulación:</strong> Zonas de bajas emisiones en ciudades europeas</li>
+        <li><strong>Mandatos de infraestructura:</strong> Requerimientos de instalación en edificios nuevos</li>
+      </ul>
+
+      <h4>Inversión Pública Directa</h4>
+      <ul>
+        <li><strong>Despliegue de infraestructura:</strong> Redes nacionales de cargadores (Plan MOVES en España)</li>
+        <li><strong>I+D público:</strong> Financiamiento de investigación en baterías y componentes</li>
+        <li><strong>Renovación de flotas públicas:</strong> Adquisición de buses y vehículos oficiales eléctricos</li>
+      </ul>
+
+      <h3>5.2. Análisis Costo-Beneficio de los Incentivos</h3>
+
+      <p>
+        Estudios económicos detallados muestran que, aunque los incentivos representan una carga fiscal significativa a corto plazo, generan beneficios sustanciales a medio y largo plazo:
+      </p>
+
+      <ul>
+        <li><strong>Reducción de importaciones de petróleo:</strong> Uruguay estima ahorros de $450M anuales</li>
+        <li><strong>Mejora de la calidad del aire:</strong> Beneficios en salud pública estimados en $1,200 por vehículo/año en áreas urbanas densas</li>
+        <li><strong>Creación de empleo:</strong> La industria de VE genera 1.5 empleos por cada empleo perdido en sector combustión</li>
+        <li><strong>Atracción de inversiones:</strong> Gigafábricas de baterías y plantas de ensamblaje</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/politicas-publicas-mobile.jpg" />
+        <img src="../assets/politicas-publicas.jpg" alt="Infografía comparativa de políticas públicas exitosas para vehículos eléctricos en diferentes países" />
+      </picture>
+
+      <h2 id="impacto-ambiental">6. Impacto Ambiental y Sostenibilidad: Más Allá de las Emisiones Cero</h2>
+
+      <h3>6.1. Análisis de Ciclo de Vida Completo</h3>
+
+      <p>
+        La evaluación ambiental de los vehículos eléctricos requiere un análisis de ciclo de vida completo (ACV) que considere:
+      </p>
+
+      <h4>Fase de Producción</h4>
+      <ul>
+        <li><strong>Huella de carbono de la batería:</strong> Varía entre 60-200 kg CO2eq/kWh dependiendo de la fuente de energía utilizada en la fabricación</li>
+        <li><strong>Extracción de materiales:</strong> Impactos ambientales de la minería de litio, cobalto y níquel</li>
+        <li><strong>Eficiencias de escala:</strong> La producción a gran escala reduce la huella por unidad</li>
+      </ul>
+
+      <h4>Fase de Uso</h4>
+      <ul>
+        <li><strong>Intensidad carbonica de la electricidad:</strong> Varía desde 10 gCO2/km (Noruega hidroeléctrica) hasta 120 gCO2/km (Polonia carbón)</li>
+        <li><strong>Eficiencia del vehículo:</strong> Los EVs convierten 77-86% de la energía eléctrica en movimiento, vs 12-30% en motores combustión</li>
+        <li><strong>Emisiones de frenos y neumáticos:</strong> Similar a vehículos convencionales</li>
+      </ul>
+
+      <h4>Fase de Fin de Vida</h4>
+      <ul>
+        <li><strong>Reciclaje de baterías:</strong> Tasa actual del 5%, con potencial de alcanzar 90% con tecnologías emergentes</li>
+        <li><strong>Segunda vida de baterías:</strong> Uso en almacenamiento estacionario después de vida vehicular</li>
+        <li><strong>Reciclaje de otros componentes:</strong> Similar a vehículos convencionales</li>
+      </ul>
+
+      <h3>6.2. Externalidades Positivas y Negativas</h3>
+
+      <p>
+        Más allá de las emisiones de CO2, la transición eléctrica genera múltiples externalidades:
+      </p>
+
+      <h4>Beneficios Ambientales</h4>
+      <ul>
+        <li><strong>Reducción de contaminación local:</strong> Cero emisiones de NOx, SOx y material particulado en punto de uso</li>
+        <li><strong>Reducción de contaminación acústica:</strong> Los EVs son significativamente más silenciosos</li>
+        <li><strong>Eficiencia en uso de espacio urbano:</strong> Potencial para reducir necesidad de estacionamiento con vehículos autónomos compartidos</li>
+      </ul>
+
+      <h4>Desafíos Ambientales</h4>
+      <ul>
+        <li><strong>Impacto de la minería:</strong> Extracción de litio, cobalto, níquel y tierras raras</li>
+        <li><strong>Gestión de residuos:</strong> Disposición final de baterías al final de su vida útil</li>
+        <li><strong>Presión sobre redes eléctricas:</strong> Necesidad de generación adicional y upgrades de transmisión</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/analisis-ciclo-vida-mobile.jpg" />
+        <img src="../assets/analisis-ciclo-vida.jpg" alt="Diagrama detallado del análisis de ciclo de vida completo de un vehículo eléctrico vs uno de combustión" />
+      </picture>
+
+      <h2 id="cadena-suministro">7. Cadena de Suministro y Geopolítica: La Nueva Economía de la Energía</h2>
+
+      <h3>7.1. Mapa Geopolítico de los Minerales Críticos</h3>
+
+      <p>
+        La transición eléctrica está reconfigurando las relaciones geopolíticas alrededor de los minerales esenciales para las baterías:
+      </p>
+
+      <h4>Litio: La "Nueva Gasolina"</h4>
+      <ul>
+        <li><strong>Principales productores:</strong> Australia (46%), Chile (26%), China (14%), Argentina (9%)</li>
+        <li><strong>Reservas:</strong> Triángulo del litio (Argentina, Bolivia, Chile) con 58% de reservas globales</li>
+        <li><strong>Procesamiento:</strong> China controla 65% del procesamiento global de litio</li>
+      </ul>
+
+      <h4>Cobalto: El Mineral Conflictivo</h4>
+      <ul>
+        <li><strong>Producción:</strong> República Democrática del Congo (70% global)</li>
+        <li><strong>Problemas éticos:</strong> Minería artesanal con condiciones laborales precarias</li>
+        <li><strong>Tendencias:</strong> Desarrollo de químicas libres de cobalto (LFP)</li>
+      </ul>
+
+      <h4>Níquel y Grafito</h4>
+      <ul>
+        <li><strong>Níquel:</strong> Indonesia (37%), Filipinas (14%), Rusia (11%)</li>
+        <li><strong>Grafito natural:</strong> China (67%), Mozambique (9%), Brasil (8%)</li>
+        <li><strong>Grafito sintético:</strong> Dominado por China (65%)</li>
+      </ul>
+
+      <h3>7.2. Estrategias de Seguridad de Suministro</h3>
+
+      <p>
+        Los países están implementando diversas estrategias para asegurar el acceso a estos minerales críticos:
+      </p>
+
+      <ul>
+        <li><strong>Inversión en minería nacional:</strong> Estados Unidos reactivando minas mediante la Defense Production Act</li>
+        <li><strong>Acuerdos bilaterales:</strong> Europa firmando partnerships con Chile, Argentina y Australia</li>
+        <li><strong>Desarrollo de capacidades de procesamiento:</strong> Inversiones en refinerías fuera de China</li>
+        <li><strong>Economía circular:</strong> Inversión en tecnologías de reciclaje de baterías</li>
+        <li><strong>Diversificación tecnológica:</strong> Desarrollo de químicas alternativas que reduzcan dependencia</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/minerales-criticos-mobile.jpg" />
+        <img src="../assets/minerales-criticos.jpg" alt="Mapa mundial mostrando la distribución de reservas y producción de minerales críticos para baterías" />
+      </picture>
+
+      <h2 id="futuro-tendencias">8. Futuro y Tendencias Emergentes: Más Allá del Automóvil Eléctrico</h2>
+
+      <h3>8.1. Convergencia Tecnológica: VE + Conducción Autónoma + Conectividad</h3>
+
+      <p>
+        Los vehículos eléctricos están convergiendo con otras megatendencias tecnológicas:
+      </p>
+
+      <h4>Vehículo a Red (V2G)</h4>
+      <p>
+        Tecnología que permite a los vehículos devolver energía a la red, transformando las flotas de EVs en sistemas de almacenamiento distribuido:
+      </p>
+      <ul>
+        <li><strong>Estabilización de redes renovables:</strong> Compensación de intermitencia solar y eólica</li>
+        <li><strong>Valorización económica:</strong> Ingresos para propietarios por servicios auxiliares</li>
+        <li><strong>Proyectos piloto:</strong> Reino Unido, California y Dinamarca liderando implementación</li>
+      </ul>
+
+      <h4>Movilidad como Servicio (MaaS)</h4>
+      <p>
+        La combinación de electrificación, autonomía y plataformas digitales está facilitando modelos de movilidad basados en suscripción:
+      </p>
+      <ul>
+        <li><strong>Flotas de robotaxis:</strong> Waymo, Cruise y Baidu expandiendo servicios comerciales</li>
+        <li><strong>Suscripciones vehiculares:</strong> Modelos "todo incluido" que simplifican la experiencia</li>
+        <li><strong>Integración multimodal:</strong> Plataformas que combinan EVs, scooters, bicicletas y transporte público</li>
+      </ul>
+
+      <h3>8.2. Electrificación de Otros Modos de Transporte</h3>
+
+      <p>
+        La electrificación se extiende más allá del automóvil particular:
+      </p>
+
+      <h4>Transporte Pesado y Logística</h4>
+      <ul>
+        <li><strong>Camiones de larga distancia:</strong> Tesla Semi, Nikola, Volvo con autonomías de 500-800 km</li>
+        <li><strong>Vehículos de reparto:</strong> Amazon desplegando 100,000 furgonetas Rivian</li>
+        <li><strong>Autobuses urbanos:</strong> BYD liderando con más de 70,000 buses eléctricos vendidos globalmente</li>
+      </ul>
+
+      <h4>Transporte Marítimo y Aéreo</h4>
+      <ul>
+        <li><strong>Ferries eléctricos:</strong> Noruega operando múltiples rutas con ferries 100% eléctricos</li>
+        <li><strong>Aviation regional:</strong> Heart Aerospace y Eviation desarrollando aviones de 9-30 plazas para distancias hasta 400 km</li>
+        <li><strong>Vehicles de trabajo:</strong> Mineros, agrícolas y de construcción en proceso de electrificación</li>
+      </ul>
+
+      <picture class="articulo-imagen-interna">
+        <source media="(max-width: 600px)" srcset="../assets/futuro-movilidad-mobile.jpg" />
+        <img src="../assets/futuro-movilidad.jpg" alt="Concepto de ecosistema de movilidad urbana integrando vehículos eléctricos autónomos, drones y infraestructura inteligente" />
+      </picture>
+
+      <h2 id="conclusion">9. Conclusión Integral: Hacia un Sistema de Movilidad Sostenible</h2>
+
+      <p>
+        La transición hacia la movilidad eléctrica representa una de las transformaciones tecnológicas y económicas más significativas del siglo XXI. Lejos de ser una moda pasajera, la electrificación del transporte se ha consolidado como una tendencia estructural con momentum irreversible. Los datos presentados en este análisis exhaustivo demuestran que:
+      </p>
+
+      <ul>
+        <li><strong>La viabilidad técnica está demostrada:</strong> Los vehículos eléctricos satisfacen las necesidades del 90% de los usuarios de automóviles</li>
+        <li><strong>La competitividad económica es creciente:</strong> Paridad de precio de compra proyectada para 2025-2027 en la mayoría de segmentos</li>
+        <li><strong>Los beneficios ambientales son sustanciales:</strong> Especialmente cuando se combinan con matrices eléctricas renovables</li>
+        <li><strong>Los modelos de negocio están evolucionando:</strong> Desde propiedad tradicional hacia servicios de movilidad integral</li>
+      </ul>
+
+      <p>
+        Los casos de éxito de China, Noruega y Uruguay ofrecen lecciones valiosas para otros países: la importancia de políticas públicas consistentes, la necesidad de abordar la transición de manera integral (infraestructura, incentivos, regulación), y el valor de adaptar las estrategias a contextos locales específicos.
+      </p>
+
+      <p>
+        Los desafíos restantes -desde la carga ultrarrápida hasta la sostenibilidad de la cadena de suministro- son significativos pero solucionables. La convergencia de la electrificación con la digitalización, la conducción autónoma y los nuevos modelos de negocio promete transformar no solo qué impulsa nuestros vehículos, sino fundamentalmente cómo nos movemos y organizamos nuestras ciudades.
+      </p>
+
+      <p>
+        La revolución del vehículo eléctrico es, en última instancia, un componente esencial de la transición más amplia hacia sistemas energéticos y de transporte descarbonizados. Su avance imparable refleja no solo progreso tecnológico, sino una reevaluación fundamental de nuestra relación con la energía, el medio ambiente y la movilidad en el Antropoceno.
+      </p>
+
+      <div class="fuentes-seccion">
+        <h4>Fuentes y Bibliografía Completa:</h4>
+        <ul>
+          <li>
+            <a
+              href="https://www.ambito.com/autos/avance-imparable-los-electricos-cuales-son-los-paises-que-lideran-el-mercado-n6204487"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ámbito (2025). El avance imparable de los eléctricos: cuáles son los países que lideran el mercado.</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.ambito.com/autos-electricos-a5124173"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ámbito (2025). Informe especial: Estado actual del mercado de autos eléctricos.</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.ambito.com/autos/electricos-un-gigante-chino-supero-primera-vez-tesla-ventas-n6212895"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ámbito (2025). Eléctricos: Un gigante chino superó por primera vez a Tesla en ventas.</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.ambito.com/uruguay/uno-cada-cuatro-vehiculos-livianos-vendidos-es-100-electrico-n6212327"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ámbito (2025). Uruguay: Uno de cada cuatro vehículos livianos vendidos es 100% eléctrico.</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.ambito.com/autos/el-gran-reclamo-del-cliente-auto-electrico-carga-inmediata-igualar-al-combustion-n6215440"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ámbito (2025). El gran reclamo del cliente de auto eléctrico: Carga inmediata para igualar al combustión.</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- TAREA 6: Paginación -->
+      <div class="pagination-nav">
+        <a href="article5.html" class="btn btn-prev"
+          >&larr; Artículo anterior</a
+        >
+        <a href="article2.html" class="btn btn-next"
+          >Artículo siguiente &rarr;</a
+        >
+      </div>
+    </article>
+  </div>
+</main>
+
+    <!-- TAREA 3: Footer Corregido (Rutas relativas ../) -->
     <footer class="footer-principal" id="contacto">
       <div class="container">
-        <a href="#" class="logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              d="M8 3H16C17.1046 3 18 3.89543 18 5V14H6V5C6 3.89543 6.89543 3 8 3ZM19 16V18C19 18.5523 18.5523 19 18 19H17V21H15V19H9V21H7V19H6C5.44772 19 5 18.5523 5 18V16H19Z"
-            ></path>
-          </svg>
+        <a href="../index.html" class="logo">
+          <img src="../assets/car-sport-outline.svg" alt="" />
           Cocheando
         </a>
+
+        <!-- Mapa del Sitio -->
+        <div class="footer-mapa-sitio">
+          <h4>Mapa del Sitio</h4>
+          <ul class="footer-enlaces-mapa">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../about.html">Sobre mí</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+            <li><a href="article1.html">Artículos</a></li>
+          </ul>
+        </div>
+
         <ul class="footer-enlaces">
-          <li><a href="#">Política de Privacidad</a></li>
-          <li><a href="#">Términos de Uso</a></li>
-          <li><a href="#">Contacto: info@motorpasion.blog</a></li>
+          <li>
+            <a href="../contacto.html">Contacto: info@motorpasion.blog</a>
+          </li>
+          <li>
+            <a href="#" class="btn-volver-arriba">Volver arriba &uarr;</a>
+          </li>
         </ul>
         <p class="footer-copyright">
           &copy; 2025 Cocheando. Todos los derechos reservados.
