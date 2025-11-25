@@ -76,7 +76,7 @@ h3 {
 .header-principal {
   background-color: var(--color-primario);
   border-bottom: 2px solid var(--color-secundario);
-  padding: 0.5rem 0;
+  /* padding: 0.5rem 0; */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -94,15 +94,15 @@ h3 {
   align-items: center;
   gap: 0.5rem;
   font-family: var(--fuente-titulos);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--color-texto-principal);
   text-transform: uppercase;
   flex-shrink: 0;
 }
 
 .logo img {
-  width: 120px;
-  min-width: 110px;
+  width: 90px;
+  /* min-width: 110px; */
   max-width: 130px;
   height: auto;
   margin-right: 10px;
@@ -666,7 +666,7 @@ h3 {
 }
 
 .articulo-contenido blockquote {
-  border-left: 4px solid var(--color-acento-racing); /* Corregido color */
+  border-left: 4px solid var(--color-acento-racing);
   padding-left: 1.5rem;
   margin: 1.5rem 0;
   font-style: italic;
@@ -677,7 +677,7 @@ h3 {
 .fuentes-seccion {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--color-secundario); /* Corregido color */
+  border-top: 1px solid var(--color-secundario);
 }
 .fuentes-seccion h4 {
   font-family: var(--fuente-titulos);
@@ -694,7 +694,6 @@ h3 {
   word-break: break-all;
 }
 
-/* (NUEVO) Estilos Paginación Artículos */
 .pagination-nav {
   display: flex;
   justify-content: space-between;
@@ -719,9 +718,7 @@ h3 {
 .btn-next {
   margin-left: auto;
 }
-/* --- Fin Estilos Paginación --- */
 
-/* (NUEVO) Estilos Imagen Interna Artículo */
 .articulo-imagen-interna {
   display: block;
   margin: 2rem 0;
@@ -733,9 +730,6 @@ h3 {
   height: auto;
   object-fit: cover;
 }
-/* --- Fin Estilos Imagen Interna --- */
-
-/* (NUEVO) Estilos Formulario de Contacto */
 .contact-form {
   max-width: 700px;
   margin: 2rem auto;
@@ -774,7 +768,6 @@ textarea.form-control {
   min-height: 150px;
   resize: vertical;
 }
-/* --- Fin Estilos Formulario --- */
 
 @media (min-width: 769px) {
   h1 {
@@ -921,6 +914,14 @@ textarea.form-control {
     border-bottom-color: var(--color-secundario);
     background-color: var(--color-secundario);
     color: var(--color-acento-racing);
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 70px;
   }
 
   .articulo-contenido {
